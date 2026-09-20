@@ -65,29 +65,51 @@ export function makePile(root, list = items()) {
       n.className = 'pile-item';
       n.textContent = it.glyph;
     } else {
-      // Text corpora overlap badly at 44 items — truncate hard and let the
-      // tooltip carry the full name.
+      // Full name; CSS ellipsis trims it to whatever column width it is given.
       n.className = 'pile-item pile-chip';
-      n.textContent = it.name.length > 17 ? `${it.name.slice(0, 16)}…` : it.name;
+      n.textContent = it.name;
     }
     n.title = [it.name, it.sub].filter(Boolean).join(' — ');
     layer.append(n);
     return n;
   });
 
+  const isText = !list[0]?.thumb && !list[0]?.glyph;
+
   return {
     layer,
     nodes,
     items: list,
+    isText,
+    // Natural (unscaled) footprint of the widest/tallest item, so a layout can
+    // size its columns from what the items actually are rather than assuming.
+    metrics() {
+      let w = 0, h = 0;
+      for (const n of nodes) {
+        const prev = n.style.maxWidth;
+        n.style.maxWidth = 'none';
+        w = Math.max(w, n.offsetWidth);
+        h = Math.max(h, n.offsetHeight);
+        n.style.maxWidth = prev;
+      }
+      return { w: w || 46, h: h || 46, text: isText };
+    },
     size: () => ({ w: layer.clientWidth, h: layer.clientHeight }),
-    place(i, x, y, { scale = 1, opacity = 1, rot = 0, instant = false } = {}) {
+    place(i, x, y, { scale = 1, opacity = 1, rot = 0, instant = false, maxWidth } = {}) {
       const n = nodes[i];
       if (!n) return;
+      if (maxWidth) n.style.maxWidth = `${Math.round(maxWidth)}px`;
       n.style.transition = instant ? 'none' : '';
       n.style.transform = `translate(-50%,-50%) translate(${x}px,${y}px) rotate(${rot}deg) scale(${scale})`;
       n.style.opacity = String(opacity);
     },
     label(i, text) { if (nodes[i]) nodes[i].title = text; },
+    // Natural box of one item, for collision work after placing.
+    boxOf(i) {
+      const n = nodes[i];
+      return n ? { w: n.offsetWidth, h: n.offsetHeight } : { w: 46, h: 46 };
+    },
+    setOpacity(i, v) { if (nodes[i]) nodes[i].style.opacity = String(v); },
     destroy() { layer.remove(); },
   };
 }

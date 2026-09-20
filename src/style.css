@@ -290,15 +290,18 @@ main {
   font-size: 15px; white-space: nowrap; color: var(--ink);
   padding: 1px 4px; border-radius: 6px;
 }
+/* Full names at a readable size. Items may overlap — the layout fades the ones
+   that collide, and hovering lifts one clear of the rest. */
 .pile-chip {
-  font-size: 10px; white-space: nowrap; color: var(--ink-soft);
-  background: var(--panel-strong); border: 1px solid var(--panel-line);
-  box-shadow: var(--shadow-sm); border-radius: 999px; padding: 3px 8px;
+  font-size: 12px; white-space: nowrap; color: var(--ink);
+  background: #fff; border: 1px solid rgba(30, 31, 32, 0.08);
+  box-shadow: none; border-radius: 999px; padding: 4px 10px;
+  transition: border-color .15s;
 }
-.pile-chip:hover, .pile-face:hover {
-  z-index: 50; background: var(--accent); color: #fff;
-  border-color: transparent; position: absolute;
-}
+/* Hover lifts an item clear of its neighbours and darkens its outline. No
+   fill — the hover card already carries the detail. */
+.pile-item:hover { z-index: 60; opacity: 1 !important; }
+.pile-chip:hover { border-color: rgba(30, 31, 32, 0.7); }
 
 .venn-bar, .guess-bar {
   position: absolute; top: 0; left: 0; right: 0; height: 46px; z-index: 3;
@@ -399,3 +402,25 @@ main {
 }
 
 /* tree */
+
+/* Sediment hover card, matching the map popup on sumitnarang.com/gym-cancel:
+   a solid grey card with no tip, a semibold white name, and a muted second
+   line. Values read from that popup's computed styles. */
+/* `display: flex` beats the UA stylesheet's [hidden] { display: none }, so the
+   hidden attribute needs restating here or the card never actually hides. */
+.sed-tip[hidden] { display: none; }
+.sed-tip {
+  position: absolute; left: 0; top: 0; z-index: 100;
+  display: flex; flex-direction: column; gap: 2px;
+  pointer-events: none; white-space: nowrap;
+  background: #636466; border: 0;
+  border-radius: 14px; padding: 10px 14px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.sed-tip-name {
+  font-size: 15px; font-weight: 600; color: #fff; letter-spacing: -0.3px;
+}
+.sed-tip-score {
+  font-size: 13px; font-weight: 500;
+  color: rgba(255, 255, 255, 0.55); letter-spacing: -0.3px;
+}
