@@ -14,7 +14,7 @@ export default {
   id: 'tree',
   short: 'Tree',
   title: 'Description → a tree',
-  tagline: 'Eight axes grow the whole thing — every branch, split and leaf is computed.',
+  tagline: 'Eight axes grow the whole thing. Every branch, split and leaf is computed.',
   placeholder: 'an ancient oak alone in a field',
   examples: [
     'an ancient oak alone in a field',

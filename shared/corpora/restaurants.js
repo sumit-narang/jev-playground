@@ -6,6 +6,7 @@
 export default {
   id: 'restaurants',
   name: 'Dublin restaurants',
+  desc: '44 Dublin restaurants, from your own database.',
   credit: 'from your own dublin_food.db',
   examples: [
     'would work for a first date',
@@ -13,7 +14,6 @@ export default {
     'could take twelve people at short notice',
     'is somewhere you go for the food, not the room',
     'you would be embarrassed to suggest this',
-    'is worth crossing the city for',
   ],
   pairWith: 'is expensive',
   items: [

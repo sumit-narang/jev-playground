@@ -52,7 +52,7 @@ export function makePile(root, list = items()) {
       // Routed through the server: several image hosts refuse the browser
       // directly. See /api/img.
       n.className = 'pile-item pile-img';
-      n.src = `/api/img?u=${encodeURIComponent(it.thumb)}`;
+      n.src = `${import.meta.env.BASE_URL}api/img?u=${encodeURIComponent(it.thumb)}`;
       n.loading = 'lazy';
       n.decoding = 'async';
       n.alt = it.alt || it.name;

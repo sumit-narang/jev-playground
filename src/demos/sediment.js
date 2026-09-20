@@ -178,8 +178,8 @@ export default {
         const ranked = LIST.map((it, i) => ({ it, v: val(answers, `i${i}`, 0.5) }))
           .sort((a, b) => b.v - a.v);
         return [
-          ['top of the water', badges(ranked.slice(0, 8).map((r) => r.it))],
-          ['on the bottom', badges(ranked.slice(-8).map((r) => r.it))],
+          ['top', badges(ranked.slice(0, 8).map((r) => r.it))],
+          ['bottom', badges(ranked.slice(-8).map((r) => r.it))],
           ['spread', `${(ranked.at(-1).v * 100) | 0}% → ${(ranked[0].v * 100) | 0}%`],
         ];
       },

@@ -7,6 +7,7 @@
 export default {
   id: 'typefaces',
   name: 'typefaces',
+  desc: '44 typefaces from Google Fonts, each set in itself.',
   credit: 'Google Fonts',
   fontsUrl: "https://fonts.googleapis.com/css2?family=Playfair+Display&family=EB+Garamond&family=Libre+Baskerville&family=Merriweather&family=Lora&family=Cormorant+Garamond&family=Marcellus&family=Crimson+Text&family=Inter&family=Roboto&family=Open+Sans&family=Work+Sans&family=DM+Sans&family=Montserrat&family=Poppins&family=Josefin+Sans&family=Space+Grotesk&family=Archivo&family=Barlow&family=Nunito&family=Quicksand&family=Oswald&family=Fjalla+One&family=Bebas+Neue&family=Anton&family=Abril+Fatface&family=Righteous&family=Rubik+Mono+One&family=Lobster&family=Pacifico&family=Dancing+Script&family=Great+Vibes&family=Caveat&family=Permanent+Marker&family=JetBrains+Mono&family=IBM+Plex+Mono&family=Space+Mono&family=Courier+Prime&family=Roboto+Slab&family=Zilla+Slab&family=Bitter&family=Bangers&family=Creepster&family=Press+Start+2P&display=swap",
   examples: [

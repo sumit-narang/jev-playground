@@ -1,4 +1,6 @@
 import express from 'express';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
 import 'dotenv/config';
 import { stubAsk } from './stub.js';
 import { normalizeResponse } from './normalize.js';
@@ -7,14 +9,21 @@ import { toWire, levelIndex } from './wire.js';
 const app = express();
 app.use(express.json({ limit: '1mb' }));
 
+// Everything — API and static app — is mounted under one base path, so the
+// same process serves sumitnarang.com/jev and /jev/api/* behind nginx.
+const BASE = process.env.BASE_PATH ?? '/jev';
+const api = express.Router();
+
 const KEY = process.env.TYPESAFE_API_KEY?.trim();
 const ASK_URL = process.env.TYPESAFE_URL || 'https://api.typesafe.ai/v1/systemone';
 const MODEL = process.env.TYPESAFE_MODEL || 'jev-latest';
 const PORT = Number(process.env.PORT || 8787);
+// Bind to loopback by default so only nginx can reach it.
+const HOST = process.env.HOST || '127.0.0.1';
 
 // Same response shape whether it came from Jev or the lexicon stub, so the
 // instruments never branch on which one answered.
-app.post('/api/ask', async (req, res) => {
+api.post('/api/ask', async (req, res) => {
   const { state, questions } = req.body ?? {};
   if (!state || !questions) {
     return res.status(400).json({ error: 'state and questions are required' });
@@ -72,7 +81,7 @@ const BROWSERISH = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
 const imgCache = new Map(); // url -> {type, buf}
 const IMG_CACHE_MAX = 400;
 
-app.get('/api/img', async (req, res) => {
+api.get('/api/img', async (req, res) => {
   const raw = req.query.u;
   if (typeof raw !== 'string') return res.status(400).end('missing u');
   let url;
@@ -106,10 +115,18 @@ app.get('/api/img', async (req, res) => {
   }
 });
 
-app.get('/api/health', (_req, res) => {
+api.get('/api/health', (_req, res) => {
   res.json({ ok: true, mode: KEY ? 'jev' : 'stub', model: KEY ? MODEL : 'stub-lexicon' });
 });
 
-app.listen(PORT, '127.0.0.1', () => {
-  console.log(`[server] http://127.0.0.1:${PORT}  mode=${KEY ? 'jev' : 'stub (no TYPESAFE_API_KEY)'}`);
+// In production this also serves the built app; in dev Vite does that and
+// only proxies the API here, so a missing dist/ is not an error.
+const dist = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist');
+api.use(express.static(dist, { maxAge: '1y', index: 'index.html' }));
+
+app.use(BASE, api);
+app.get('/', (_req, res) => res.redirect(BASE));
+
+app.listen(PORT, HOST, () => {
+  console.log(`[server] http://${HOST}:${PORT}${BASE}  mode=${KEY ? 'jev' : 'stub (no TYPESAFE_API_KEY)'}`);
 });

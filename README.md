@@ -10,6 +10,34 @@ coordinate, or visible grain.
 The second premise: ~100ms means judgment can sit **inside** an interface rather
 than behind a submit button. Everything updates as you type.
 
+## Deploying
+
+Hosted at **sumitnarang.com/jev** on a Node server. One process serves both the
+built app and the API, so the TypeSafe key stays server-side — this app cannot
+be a static site the way `gym-cancel` is, because every answer is a live call.
+
+```bash
+./deploy/deploy.sh          # build, rsync, restart, health-check
+```
+
+First run, on the server:
+
+```bash
+sudo mkdir -p /srv/jev && sudo chown deploy:deploy /srv/jev
+sudo cp deploy/jev.service /etc/systemd/system/ && sudo systemctl daemon-reload
+printf 'TYPESAFE_API_KEY=%s\n' 'sk-...' | sudo tee /srv/jev/.env >/dev/null
+sudo chmod 600 /srv/jev/.env && sudo chown deploy:deploy /srv/jev/.env
+sudo systemctl enable --now jev
+```
+
+Then add `deploy/nginx.conf` inside the existing `server {}` block for the site
+and reload nginx. The Node process binds to `127.0.0.1` only, so nginx is the
+sole way in.
+
+`base` is `/jev/` in `vite.config.js`, and the client builds its API URL from
+`import.meta.env.BASE_URL` — change the base in one place and both the assets
+and the endpoint follow.
+
 ## Run it
 
 ```bash

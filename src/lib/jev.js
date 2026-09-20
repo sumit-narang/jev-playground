@@ -1,4 +1,8 @@
 // Browser-side client. The key never reaches here — server/index.js holds it.
+//
+// Paths are relative to the app's base, so the same build works at the site
+// root or under /jev without the endpoint being hardcoded.
+const API = `${import.meta.env.BASE_URL}api`;
 
 const cache = new Map();
 let inflight = null;
@@ -16,7 +20,7 @@ export async function ask(state, questions, { supersede = false } = {}) {
     inflight = controller;
   }
 
-  const res = await fetch('/api/ask', {
+  const res = await fetch(`${API}/ask`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ state, questions }),
@@ -44,7 +48,7 @@ export function debounce(fn, ms = 220) {
 
 export async function health() {
   try {
-    return await (await fetch('/api/health')).json();
+    return await (await fetch(`${API}/health`)).json();
   } catch {
     return { ok: false, mode: 'offline' };
   }

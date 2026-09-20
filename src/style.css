@@ -5,18 +5,19 @@
    face, same as mountains. */
 :root {
   --bg: #e8e8e8;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --muted: #5b6a7e;
+  --ink-rgb: 30, 31, 32;
+  --ink: rgb(var(--ink-rgb));
+  --ink-soft: rgba(var(--ink-rgb), 0.82);
+  --muted: rgba(var(--ink-rgb), 0.65);
   --accent: #2563eb;
   --accent-soft: #3b82f6;
 
   --panel: rgba(255, 255, 255, 0.75);
   --panel-strong: rgba(255, 255, 255, 0.85);
   --panel-line: rgba(255, 255, 255, 0.6);
-  --hairline: rgba(15, 23, 42, 0.08);
-  --fill: rgba(15, 23, 42, 0.05);
-  --fill-hover: rgba(15, 23, 42, 0.08);
+  --hairline: rgba(var(--ink-rgb), 0.08);
+  --fill: rgba(var(--ink-rgb), 0.05);
+  --fill-hover: rgba(var(--ink-rgb), 0.08);
 
   --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -46,7 +47,7 @@ h1 {
   font-size: 22px; font-weight: 700; margin: 0;
   letter-spacing: -0.5px; color: var(--ink);
 }
-.sub { color: var(--muted); margin: 5px 0 14px; font-size: 13px; }
+.sub { color: var(--muted); margin: 5px 0 28px; font-size: 13px; }
 
 /* Tabs wearing the control style from sumitnarang.com/svg-icon: white 8px
    pills at 28px, 14px text in a muted ink, and a hairline ring that appears
@@ -131,7 +132,7 @@ main {
 /* Search field taken from sumitnarang.com/gym-cancel: white, a hairline
    black/10 border, 12px radius, no shadow, and a soft ring on focus. */
 .phrase {
-  width: 100%; background: #fff; color: #1e293b;
+  width: 100%; background: #fff; color: var(--ink);
   border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px;
   padding: 8px 12px 8px 36px; font: inherit; font-size: 14px; resize: none;
   letter-spacing: inherit;
@@ -143,20 +144,50 @@ main {
 }
 .phrase::placeholder { color: var(--muted); }
 
-.examples { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; margin-top: 9px; }
+/* Hints sit in a disclosure that is forced open above 600px, and collapses
+   below it where the row would otherwise wrap several lines deep. */
+.hints { margin-top: 9px; }
+.hints > summary {
+  display: none;                 /* wide screens: no control, always open */
+  list-style: none; cursor: pointer;
+  align-items: center; gap: 6px;
+  width: fit-content; padding: 2px 0;
+  font-size: 12px; color: var(--muted); letter-spacing: inherit;
+}
+.hints > summary::-webkit-details-marker { display: none; }
+.hints > summary::before {
+  content: ''; width: 0; height: 0;
+  border-left: 4px solid currentColor;
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid transparent;
+  transition: transform .15s;
+}
+.hints[open] > summary::before { transform: rotate(90deg); }
+.hints > summary:hover { color: var(--ink); }
+
+.examples { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+
+@media (max-width: 599px) {
+  .hints > summary { display: inline-flex; }
+  .hints[open] > .examples { margin-top: 8px; }
+
+  /* 16px gutters on a narrow screen; the vertical padding is unchanged. */
+  header { padding-left: 16px; padding-right: 16px; }
+  main { padding-left: 16px; padding-right: 16px; }
+}
 
 /* Examples read as suggestions, not buttons: a dashed underline rather than a
    pill, which the corpus chips above already own. */
 .examples .chip {
   background: none; box-shadow: none; border: 0; border-radius: 0;
   padding: 2px 0; margin-right: 12px; color: var(--muted);
-  border-bottom: 1px dashed rgba(15, 23, 42, 0.28);
+  border-bottom: 1px dashed rgba(var(--ink-rgb), 0.28);
   font: inherit; font-size: 12px; letter-spacing: inherit; cursor: pointer;
   transition: color .15s, border-color .15s;
 }
 .examples .chip:hover {
   color: var(--ink); background: none;
-  border-bottom-color: rgba(15, 23, 42, 0.5);
+  border-bottom-color: rgba(var(--ink-rgb), 0.5);
 }
 
 .status {
@@ -187,7 +218,7 @@ main {
 }
 .warn code {
   font-family: ui-monospace, monospace; font-size: 11px;
-  background: rgba(15, 23, 42, 0.07); padding: 1px 5px; border-radius: 4px;
+  background: rgba(var(--ink-rgb), 0.07); padding: 1px 5px; border-radius: 4px;
 }
 
 /* ── typography instrument ──────────────────────────────────────────────── */
@@ -253,7 +284,7 @@ main {
   letter-spacing: inherit; cursor: pointer;
   transition: background .15s;
 }
-.stroke-bar .clear:hover { background: rgba(0, 0, 0, 0.16); }
+.stroke-bar .clear:hover { background: rgba(0, 0, 0, 0.14); }
 .sound-panel .play, .hand-text {
   background: var(--panel-strong); border: 1px solid var(--panel-line);
   color: var(--ink); box-shadow: var(--shadow-sm);
@@ -261,7 +292,7 @@ main {
 }
 .hand-text { min-width: 220px; cursor: text; }
 .hand-text:focus { outline: none; border-color: var(--accent-soft); }
-.sound-panel .play:hover, .stroke-bar .clear:hover { background: #fff; }
+.sound-panel .play:hover { background: var(--fill-hover); }
 .face-hint {
   position: absolute; left: 0; right: 0; bottom: 10px; text-align: center;
   color: var(--muted); font-size: 11px; margin: 0; pointer-events: none;
@@ -389,10 +420,10 @@ main {
 .mine-row .p { position: relative; font-family: ui-monospace, monospace; font-size: 11px; color: var(--muted); }
 
 /* ── scrollbars, as in mountains ────────────────────────────────────────── */
-* { scrollbar-width: thin; scrollbar-color: rgba(148, 163, 184, 0.35) transparent; }
+* { scrollbar-width: thin; scrollbar-color: rgba(var(--ink-rgb), 0.25) transparent; }
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.35); border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: rgba(var(--ink-rgb), 0.25); border-radius: 2px; }
 
 @media (max-width: 860px) {
   main { grid-template-columns: 1fr; grid-template-areas: "control" "stage" "readout"; }

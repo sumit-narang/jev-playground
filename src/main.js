@@ -22,7 +22,10 @@ app.innerHTML = `
   <main>
     <section class="control">
       <div id="input-slot" class="search"></div>
-      <div id="examples" class="examples"></div>
+      <details id="hints" class="hints">
+        <summary>Input suggestion</summary>
+        <div id="examples" class="examples"></div>
+      </details>
       <p id="warn" class="warn" hidden></p>
     </section>
     <section class="stage-wrap"><div id="stage" class="stage"></div></section>
@@ -36,6 +39,15 @@ const nav = document.querySelector('#nav');
 const stage = document.querySelector('#stage');
 const inputSlot = document.querySelector('#input-slot');
 const examplesEl = document.querySelector('#examples');
+const hintsEl = document.querySelector('#hints');
+
+// The hints collapse behind a disclosure under 600px. A <details> only reveals
+// its content when `open`, and the UA hides it in a slot CSS cannot reach — so
+// the wide-screen "always shown" state has to be set here, not in a media rule.
+const wide = window.matchMedia('(min-width: 600px)');
+const syncHints = () => { hintsEl.open = wide.matches; };
+wide.addEventListener('change', syncHints);
+syncHints();
 const warnEl = document.querySelector('#warn');
 const statusEl = document.querySelector('#status');
 const readoutEl = document.querySelector('#readout');
@@ -99,8 +111,15 @@ function select(demo) {
   stage.replaceChildren();
   current = demo;
 
-  document.querySelector('#demo-title').textContent = demo.short ?? demo.title;
-  document.querySelector('#demo-tag').textContent = demo.tagline;
+  // The card names whatever tab is selected: an instrument, or the corpus
+  // when the tab is one of those.
+  const corpus = demo.usesCorpus ? activeCorpus() : null;
+  const heading = corpus
+    ? corpus.name.charAt(0).toUpperCase() + corpus.name.slice(1)
+    : (demo.short ?? demo.title);
+  document.querySelector('#demo-title').textContent = heading;
+  document.querySelector('#demo-tag').textContent =
+    corpus ? (corpus.desc ?? demo.tagline) : demo.tagline;
   readoutEl.replaceChildren();
   warnEl.hidden = true;
   // A corpus tab is current when Sediment is showing AND that corpus is active.
@@ -119,7 +138,8 @@ function select(demo) {
   inputEl.placeholder = 'Type something...';
   if (demo.multiline) inputEl.rows = 3;
   const suggestions = (demo.usesCorpus && activeCorpus().examples) || demo.examples;
-  inputEl.value = suggestions[0];
+  const first = suggestions[0] ?? '';
+  inputEl.value = first.charAt(0).toUpperCase() + first.slice(1);
   inputEl.addEventListener('input', () => runDebounced(inputEl.value));
   inputSlot.append(inputEl);
 

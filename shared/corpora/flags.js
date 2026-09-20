@@ -13,11 +13,11 @@ const f = (id, name, sub, tags) => ({
 export default {
   id: 'flags',
   name: 'flags',
+  desc: '48 national flags, picked to span geography and design.',
   credit: 'flagcdn.com',
   examples: [
     'this country is landlocked',
     'this flag has a living thing on it',
-    'I could find this country on a map unprompted',
     'this country existed under this name in 1900',
     'this flag would be hard to draw from memory',
     'this country has a monarchy',

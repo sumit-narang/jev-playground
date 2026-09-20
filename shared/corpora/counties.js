@@ -4,6 +4,7 @@
 export default {
   id: 'counties',
   name: 'counties of Ireland',
+  desc: 'All 32 counties of Ireland.',
   credit: 'all 32 — the set is complete by definition',
   examples: [
     'has a coastline',

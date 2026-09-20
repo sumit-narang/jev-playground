@@ -5,6 +5,7 @@
 export default {
   id: 'emoji',
   name: 'emoji',
+  desc: '90 everyday things, hand-tagged for the offline stub.',
   credit: '',
   examples: ['could be eaten', 'a magnet would attract it', 'is found in nature',
              'would hurt to step on', 'fits in a pocket', 'is alive'],

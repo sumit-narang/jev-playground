@@ -15,6 +15,7 @@ import typefaces from './typefaces.js';
 const artworks = {
   id: 'artworks',
   name: 'artworks',
+  desc: '96 public-domain works from the Art Institute of Chicago.',
   credit: artworksData.source,
   examples: [
     'the subject looks unhappy', 'this was made before 1800',

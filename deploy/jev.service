@@ -1,0 +1,36 @@
+# systemd unit — install to /etc/systemd/system/jev.service
+#
+#   sudo cp deploy/jev.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now jev
+#   sudo systemctl status jev
+#
+[Unit]
+Description=Jev playground
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+WorkingDirectory=/srv/jev
+ExecStart=/usr/bin/node server/index.js
+Restart=always
+RestartSec=3
+
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=8787
+Environment=BASE_PATH=/jev
+# The key lives here, readable only by this service's user:
+#   sudo install -o deploy -g deploy -m 600 /dev/null /srv/jev/.env
+EnvironmentFile=/srv/jev/.env
+
+# The process only ever needs to read its own directory.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/jev
+
+[Install]
+WantedBy=multi-user.target
