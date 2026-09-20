@@ -20,9 +20,9 @@ app.innerHTML = `
   </header>
   <main>
     <section class="control">
-      <div id="input-slot"></div>
-      <div id="examples" class="examples"></div>
       <div id="corpus" class="corpus" hidden></div>
+      <div id="input-slot" class="search"></div>
+      <div id="examples" class="examples"></div>
       <p id="warn" class="warn" hidden></p>
       <p id="status" class="status"></p>
     </section>
@@ -137,21 +137,15 @@ function select(demo) {
   corpusEl.replaceChildren();
   if (demo.usesCorpus) {
     const active = activeCorpus();
-    corpusEl.append(Object.assign(document.createElement('span'), {
-      className: 'corpus-label', textContent: 'corpus',
-    }));
     for (const c of CORPORA) {
       const b = document.createElement('button');
       b.type = 'button';
       b.className = `chip${c.id === active.id ? ' on' : ''}`;
-      b.textContent = `${c.name} (${c.items.length})`;
+      // Only the first letter — CSS `capitalize` would also hit "of" and
+      // "Ireland" in "counties of Ireland".
+      b.textContent = `${c.name.charAt(0).toUpperCase()}${c.name.slice(1)} (${c.items.length})`;
       b.addEventListener('click', () => { setCorpus(c.id); select(demo); });
       corpusEl.append(b);
-    }
-    if (active.credit) {
-      corpusEl.append(Object.assign(document.createElement('span'), {
-        className: 'corpus-credit', textContent: active.credit,
-      }));
     }
   }
 

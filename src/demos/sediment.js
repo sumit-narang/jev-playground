@@ -6,7 +6,7 @@ const LEVELS = ['not_at_all', 'slightly', 'moderately', 'very', 'extremely'];
 export default {
   id: 'sediment',
   usesCorpus: true,
-  short: 'sediment',
+  short: 'Sediment',
   title: 'Sedimentation',
   tagline: 'A score, not a yes/no. Items settle to a height — you get strata, not a threshold.',
   placeholder: 'would hurt to step on',

@@ -6,7 +6,7 @@ const S = (instruction, levels) => ({ type: 'score', instruction, levels });
 
 export default {
   id: 'material',
-  short: 'material',
+  short: 'Material',
   title: 'Language → material',
   tagline: 'A phrase scored on surface axes, driving a physical shader.',
   placeholder: 'moss on a stone wall',

@@ -4,7 +4,7 @@ import { val, clamp } from '../lib/util.js';
 export default {
   id: 'magnet',
   usesCorpus: true,
-  short: 'magnet',
+  short: 'Magnet',
   title: 'The magnet',
   tagline: 'Your cursor is the force field. Matching items follow it; the rest are repelled.',
   placeholder: 'a magnet would attract it',

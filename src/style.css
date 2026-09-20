@@ -24,6 +24,8 @@
   --r-md: 20px;
   --r-lg: 28px;
 
+  --search-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.6-3.6'/%3E%3C/svg%3E");
+
   color-scheme: light;
 }
 
@@ -46,20 +48,24 @@ h1 {
 }
 .sub { color: var(--muted); margin: 5px 0 14px; max-width: 62ch; font-size: 13px; }
 
-nav {
-  display: flex; flex-wrap: wrap; gap: 3px;
-  background: var(--panel); backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--panel-line); box-shadow: var(--shadow-sm);
-  border-radius: var(--r-md); padding: 4px;
-}
+/* Tabs: a plain row, the active one marked by a straight underline. No rule
+   under the row, no hover fill, no rounded anything — hover is a colour change
+   on the text alone. */
+nav { display: flex; flex-wrap: wrap; gap: 2px; }
 nav button {
-  background: none; border: 0; color: var(--muted);
-  padding: 6px 12px; cursor: pointer; font: inherit; font-size: 13px;
-  border-radius: var(--r-sm); transition: background .15s, color .15s;
+  position: relative; background: none; border: 0; border-radius: 0;
+  color: var(--muted); font: inherit; font-size: 13.5px;
+  padding: 9px 14px 11px; cursor: pointer;
+  transition: color .15s;
 }
-nav button:hover { color: var(--ink); background: var(--fill); }
-nav button.on { color: #fff; background: var(--accent); }
+nav button::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0;
+  height: 2px; border-radius: 0;
+  background: transparent; transition: background .15s;
+}
+nav button:hover { color: var(--accent); }
+nav button.on { color: var(--accent); font-weight: 600; }
+nav button.on::after { background: var(--accent); }
 
 .mode {
   position: absolute; top: 24px; right: 24px; font-size: 11px;
@@ -90,10 +96,30 @@ main {
   border-radius: var(--r-lg); padding: 18px 20px; align-self: start;
 }
 
+/* The search sits over the stage, so it matches the stage column rather than
+   spanning the full grid (readout column + gap = 314px). */
+.search {
+  position: relative;
+  max-width: calc(100% - 314px);
+}
+.search::before {
+  content: ''; position: absolute; left: 18px; top: 50%;
+  width: 17px; height: 17px; transform: translateY(-50%);
+  /* Above the input: its opaque background paints over an auto-z pseudo. */
+  z-index: 2; pointer-events: none; opacity: .55;
+  /* Longhand: the `mask` shorthand does not reliably take a var() url in all
+     engines. Colour comes from the background behind the mask. */
+  background-color: var(--muted);
+  -webkit-mask-image: var(--search-icon);
+  mask-image: var(--search-icon);
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center; mask-position: center;
+  -webkit-mask-size: contain; mask-size: contain;
+}
 .phrase {
   width: 100%; background: var(--panel-strong); color: var(--ink);
-  border: 1px solid var(--panel-line); border-radius: var(--r-md);
-  padding: 13px 16px; font: inherit; font-size: 16px; resize: vertical;
+  border: 1px solid var(--panel-line); border-radius: 999px;
+  padding: 13px 20px 13px 45px; font: inherit; font-size: 16px; resize: none;
   box-shadow: var(--shadow-sm); backdrop-filter: blur(20px);
   letter-spacing: -0.2px;
 }
@@ -128,13 +154,12 @@ main {
 .readout dd { margin: 0; overflow-wrap: anywhere; color: var(--ink-soft); }
 
 /* ── corpus picker + warning ────────────────────────────────────────────── */
-.corpus { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 9px; }
-.corpus-label {
-  font-family: ui-monospace, monospace; font-size: 10px; color: var(--muted);
-  letter-spacing: .08em; text-transform: uppercase; margin-right: 2px;
-}
+.corpus { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 10px; }
+/* Corpus chips are squarer than the example pills, and hover fills them. */
+.corpus .chip { border-radius: 8px; }
+.corpus .chip:hover { background: var(--accent-soft); border-color: transparent; color: #fff; }
 .corpus .chip.on { color: #fff; background: var(--accent); border-color: transparent; }
-.corpus-credit { font-size: 11px; color: var(--muted); margin-left: 6px; }
+.corpus .chip.on:hover { background: var(--accent); }
 
 .warn {
   margin: 10px 0 0; padding: 10px 14px; border-radius: var(--r-sm);
@@ -331,6 +356,7 @@ main {
 
 @media (max-width: 860px) {
   main { grid-template-columns: 1fr; grid-template-areas: "control" "stage" "readout"; }
+  .search { max-width: 100%; }
   .mode { position: static; display: inline-block; margin-bottom: 10px; }
   .mine-wrap { grid-template-columns: 1fr; }
 }

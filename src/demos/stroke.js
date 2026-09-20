@@ -4,7 +4,7 @@ const S = (instruction, levels) => ({ type: 'score', instruction, levels });
 
 export default {
   id: 'stroke',
-  short: 'stroke',
+  short: 'Stroke',
   title: 'Description → stroke',
   tagline: 'Describe a line, then draw with it. Brush parameters, not pixels.',
   placeholder: 'a nervous line',
