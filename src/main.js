@@ -24,10 +24,12 @@ app.innerHTML = `
       <div id="input-slot" class="search"></div>
       <div id="examples" class="examples"></div>
       <p id="warn" class="warn" hidden></p>
-      <p id="status" class="status"></p>
     </section>
     <section class="stage-wrap"><div id="stage" class="stage"></div></section>
-    <section class="readout"><h2 id="demo-title"></h2><p id="demo-tag"></p><dl id="readout"></dl></section>
+    <section class="readout-col">
+      <div class="readout"><h2 id="demo-title"></h2><p id="demo-tag"></p><dl id="readout"></dl></div>
+      <p id="status" class="status"></p>
+    </section>
   </main>`;
 
 const nav = document.querySelector('#nav');
@@ -52,16 +54,22 @@ function run(text) {
   // list). stateFor lets them build the payload; the rest just send the phrase.
   const state = current.stateFor ? current.stateFor(value, instance) : value;
 
-  statusEl.textContent = 'asking…';
+  statusEl.textContent = 'Asking…';
   const t0 = performance.now();
 
   ask(state, questions, { supersede: true })
     .then((res) => {
       const rows = instance.update(res.answers, value) ?? [];
       readoutEl.replaceChildren();
+      // Level names arrive as tokens ("middle_aged", "bare_rock"). Capitalising
+      // without unpicking the underscore gives "Middle_aged", so do both.
+      const pretty = (t) => {
+        const x = String(t).replace(/_/g, ' ');
+        return x.charAt(0).toUpperCase() + x.slice(1);
+      };
       for (const [k, v] of rows) {
-        const dt = document.createElement('dt'); dt.textContent = k;
-        const dd = document.createElement('dd'); dd.textContent = v;
+        const dt = document.createElement('dt'); dt.textContent = pretty(k);
+        const dd = document.createElement('dd'); dd.textContent = pretty(v);
         readoutEl.append(dt, dd);
       }
       const ms = Math.round(performance.now() - t0);
@@ -92,7 +100,7 @@ function select(demo) {
   stage.replaceChildren();
   current = demo;
 
-  document.querySelector('#demo-title').textContent = demo.title;
+  document.querySelector('#demo-title').textContent = demo.short ?? demo.title;
   document.querySelector('#demo-tag').textContent = demo.tagline;
   readoutEl.replaceChildren();
   warnEl.hidden = true;
@@ -101,7 +109,7 @@ function select(demo) {
   inputSlot.replaceChildren();
   inputEl = document.createElement(demo.multiline ? 'textarea' : 'input');
   inputEl.className = 'phrase';
-  inputEl.placeholder = demo.placeholder;
+  inputEl.placeholder = 'Type something...';
   if (demo.multiline) inputEl.rows = 3;
   const suggestions = (demo.usesCorpus && activeCorpus().examples) || demo.examples;
   inputEl.value = suggestions[0];
@@ -113,8 +121,10 @@ function select(demo) {
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'chip';
-    b.textContent = ex;
-    b.addEventListener('click', () => { inputEl.value = ex; run(ex); });
+    // The search is filled with exactly what the hint shows, so the two agree.
+    const shown = ex.charAt(0).toUpperCase() + ex.slice(1);
+    b.textContent = shown;
+    b.addEventListener('click', () => { inputEl.value = shown; run(shown); });
     examplesEl.append(b);
   }
 

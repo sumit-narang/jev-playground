@@ -35,7 +35,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.3px;
   -webkit-font-smoothing: antialiased;
 }
 #app { display: flex; flex-direction: column; min-height: 100%; }
@@ -88,12 +88,17 @@ main {
 }
 .control { grid-area: control; }
 .stage-wrap { grid-area: stage; min-width: 0; }
-.readout {
+.readout-col {
   grid-area: readout;
-  background: var(--panel); backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--panel-line); box-shadow: var(--shadow);
-  border-radius: var(--r-lg); padding: 18px 20px; align-self: start;
+  display: flex; flex-direction: column; gap: 10px; align-self: start;
+}
+.readout {
+  /* Card taken from sumitnarang.com/gym-cancel's list rows: white, no border,
+     and a two-part shadow — a 1px contact edge plus a wide soft grey glow. */
+  background: #fff; border: 0;
+  border-radius: 16px;
+  box-shadow: rgba(66, 71, 76, 0.32) 0 0 1px 0, #eee 0 8px 48px 0;
+  padding: 20px;
 }
 
 /* The search sits over the stage, so it matches the stage column rather than
@@ -103,8 +108,8 @@ main {
   max-width: calc(100% - 314px);
 }
 .search::before {
-  content: ''; position: absolute; left: 18px; top: 50%;
-  width: 17px; height: 17px; transform: translateY(-50%);
+  content: ''; position: absolute; left: 13px; top: 50%;
+  width: 15px; height: 15px; transform: translateY(-50%);
   /* Above the input: its opaque background paints over an auto-z pseudo. */
   z-index: 2; pointer-events: none; opacity: .55;
   /* Longhand: the `mask` shorthand does not reliably take a var() url in all
@@ -116,36 +121,49 @@ main {
   -webkit-mask-position: center; mask-position: center;
   -webkit-mask-size: contain; mask-size: contain;
 }
+/* Search field taken from sumitnarang.com/gym-cancel: white, a hairline
+   black/10 border, 12px radius, no shadow, and a soft ring on focus. */
 .phrase {
-  width: 100%; background: var(--panel-strong); color: var(--ink);
-  border: 1px solid var(--panel-line); border-radius: 999px;
-  padding: 13px 20px 13px 45px; font: inherit; font-size: 16px; resize: none;
-  box-shadow: var(--shadow-sm); backdrop-filter: blur(20px);
-  letter-spacing: -0.2px;
+  width: 100%; background: #fff; color: #1e293b;
+  border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px;
+  padding: 8px 12px 8px 36px; font: inherit; font-size: 14px; resize: none;
+  letter-spacing: inherit;
+  box-shadow: none; outline: none;
 }
-.phrase:focus { outline: none; border-color: var(--accent-soft); }
+.phrase:focus {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
 .phrase::placeholder { color: var(--muted); }
 
-.examples { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
-.chip {
-  background: var(--panel); border: 1px solid var(--panel-line);
-  color: var(--ink-soft); box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(20px);
-  border-radius: 999px; padding: 5px 12px; font: inherit; font-size: 12px;
-  cursor: pointer; transition: background .15s, color .15s;
+.examples { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; margin-top: 9px; }
+
+/* Examples read as suggestions, not buttons: a dashed underline rather than a
+   pill, which the corpus chips above already own. */
+.examples .chip {
+  background: none; box-shadow: none; border: 0; border-radius: 0;
+  padding: 2px 0; margin-right: 12px; color: var(--muted);
+  border-bottom: 1px dashed rgba(15, 23, 42, 0.28);
+  font: inherit; font-size: 12px; letter-spacing: inherit; cursor: pointer;
+  transition: color .15s, border-color .15s;
 }
-.chip:hover { background: #fff; color: var(--ink); }
+.examples .chip:hover {
+  color: var(--ink); background: none;
+  border-bottom-color: rgba(15, 23, 42, 0.5);
+}
+
 .status {
   color: var(--muted); font-family: ui-monospace, monospace;
-  font-size: 11px; margin: 9px 0 0; min-height: 1.4em;
+  font-size: 11px; margin: 0; padding: 0 6px; min-height: 1.4em;
 }
 
 .stage {
   position: relative; height: clamp(430px, 64vh, 680px); overflow: hidden;
-  background: var(--panel); backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--panel-line); box-shadow: var(--shadow);
-  border-radius: var(--r-lg);
+  /* Card taken from sumitnarang.com/gym-cancel's list rows: white, no border,
+     and a two-part shadow — a 1px contact edge plus a wide soft grey glow. */
+  background: #fff; border: 0;
+  border-radius: 16px;
+  box-shadow: rgba(66, 71, 76, 0.32) 0 0 1px 0, #eee 0 8px 48px 0;
 }
 .readout h2 { font-size: 17px; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.4px; }
 .readout p { color: var(--muted); margin: 0 0 14px; font-size: 12.5px; }

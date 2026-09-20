@@ -24,7 +24,10 @@ export default {
 
     const rules = document.createElement('div');
     rules.className = 'strata';
-    rules.innerHTML = LEVELS.map((l) => `<span>${l.replace(/_/g, ' ')}</span>`).reverse().join('');
+    rules.innerHTML = LEVELS
+      .map((l) => l.replace(/_/g, ' '))
+      .map((l) => `<span>${l.charAt(0).toUpperCase()}${l.slice(1)}</span>`)
+      .reverse().join('');
     stage.append(rules);
 
     const pile = makePile(stage, LIST);

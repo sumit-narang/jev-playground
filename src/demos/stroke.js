@@ -26,8 +26,8 @@ export default {
     root.append(canvas);
     const bar = document.createElement('div');
     bar.className = 'stroke-bar';
-    bar.innerHTML = `<span class="hint">drag on the canvas to draw with this brush</span>
-      <button class="clear" type="button">clear</button>`;
+    bar.innerHTML = `<span class="hint">Drag on the canvas to draw with this brush</span>
+      <button class="clear" type="button">Clear</button>`;
     root.append(bar);
 
     const ctx = canvas.getContext('2d');

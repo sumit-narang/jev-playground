@@ -21,7 +21,7 @@ export default {
     root.append(stage);
     const hint = document.createElement('p');
     hint.className = 'magnet-hint';
-    hint.textContent = 'move the pointer across the field';
+    hint.textContent = 'Move the pointer across the field';
     stage.append(hint);
 
     const pile = makePile(stage, LIST);
