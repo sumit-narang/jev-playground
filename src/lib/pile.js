@@ -52,7 +52,13 @@ export function makePile(root, list = items()) {
       // Routed through the server: several image hosts refuse the browser
       // directly. See /api/img.
       n.className = 'pile-item pile-img';
-      n.src = `${import.meta.env.BASE_URL}api/img?u=${encodeURIComponent(it.thumb)}`;
+      // A relative path is a file we ship; a full URL goes through /api/img,
+      // since some hosts refuse the browser directly. Artworks are vendored:
+      // artic.edu returns 403 to datacenter IPs, so the proxy cannot fetch
+      // them from the server at all.
+      n.src = /^https?:/.test(it.thumb)
+        ? `${import.meta.env.BASE_URL}api/img?u=${encodeURIComponent(it.thumb)}`
+        : `${import.meta.env.BASE_URL}${it.thumb}`;
       n.loading = 'lazy';
       n.decoding = 'async';
       n.alt = it.alt || it.name;

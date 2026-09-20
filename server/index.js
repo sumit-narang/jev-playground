@@ -122,7 +122,21 @@ api.get('/api/health', (_req, res) => {
 // In production this also serves the built app; in dev Vite does that and
 // only proxies the API here, so a missing dist/ is not an error.
 const dist = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist');
-api.use(express.static(dist, { maxAge: '1y', index: 'index.html' }));
+// Asset filenames are content-hashed so they can be cached hard, but the HTML
+// that points at them must always revalidate — otherwise a browser keeps last
+// deploy's index.html for a year and never sees the new bundle.
+api.use(express.static(dist, {
+  index: false,
+  setHeaders(res, path) {
+    res.setHeader('Cache-Control', path.endsWith('.html')
+      ? 'no-cache'
+      : 'public, max-age=31536000, immutable');
+  },
+}));
+api.get(/.*/, (_req, res) => {
+  res.setHeader('Cache-Control', 'no-cache');
+  res.sendFile(join(dist, 'index.html'));
+});
 
 app.use(BASE, api);
 app.get('/', (_req, res) => res.redirect(BASE));

@@ -6,7 +6,7 @@ export default {
    "id": "aic-11",
    "name": "Self-Portrait",
    "sub": "Walter Shirlaw, 1878",
-   "thumb": "https://www.artic.edu/iiif/2/7b7a6f39-1cd8-ea2f-9811-18b0e23edac0/full/200,/0/default.jpg",
+   "thumb": "art/aic-11.jpg",
    "full": "https://www.artic.edu/iiif/2/7b7a6f39-1cd8-ea2f-9811-18b0e23edac0/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -26,13 +26,14 @@ export default {
     "self",
     "portrait",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/7b7a6f39-1cd8-ea2f-9811-18b0e23edac0/full/200,/0/default.jpg"
   },
   {
    "id": "aic-80607",
    "name": "Self-Portrait",
    "sub": "Vincent van Gogh, 1887",
-   "thumb": "https://www.artic.edu/iiif/2/47c5bcb8-62ef-e5d7-55e7-f5121f409a30/full/200,/0/default.jpg",
+   "thumb": "art/aic-80607.jpg",
    "full": "https://www.artic.edu/iiif/2/47c5bcb8-62ef-e5d7-55e7-f5121f409a30/full/843,/0/default.jpg",
    "alt": "Painting of a red-haired, bearded man with light skin, painted in short brushstrokes and multicolored dots. The background is likewise a mass of small, closely spaced colored dots, these in green, blue, and red-orange.",
    "meta": {
@@ -58,13 +59,14 @@ export default {
     "visual",
     "works",
     "paint"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/47c5bcb8-62ef-e5d7-55e7-f5121f409a30/full/200,/0/default.jpg"
   },
   {
    "id": "aic-862",
    "name": "Portrait of an Artist",
    "sub": "Follower of Frans Hals, 1644",
-   "thumb": "https://www.artic.edu/iiif/2/c95d58bf-fe9e-e5bb-2c71-ab8bad984759/full/200,/0/default.jpg",
+   "thumb": "art/aic-862.jpg",
    "full": "https://www.artic.edu/iiif/2/c95d58bf-fe9e-e5bb-2c71-ab8bad984759/full/843,/0/default.jpg",
    "alt": "Painting of a mustached man with a wide-brimmed black hat and white flat collar seen from the waist up, turned to the viewer.",
    "meta": {
@@ -88,13 +90,14 @@ export default {
     "european",
     "artist",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/c95d58bf-fe9e-e5bb-2c71-ab8bad984759/full/200,/0/default.jpg"
   },
   {
    "id": "aic-29230",
    "name": "Julia Jackson",
    "sub": "Julia Margaret Cameron, 1867",
-   "thumb": "https://www.artic.edu/iiif/2/7582416c-67cd-3682-bf97-5f9883bdd972/full/200,/0/default.jpg",
+   "thumb": "art/aic-29230.jpg",
    "full": "https://www.artic.edu/iiif/2/7582416c-67cd-3682-bf97-5f9883bdd972/full/843,/0/default.jpg",
    "alt": "A work made of albumen print.",
    "meta": {
@@ -118,13 +121,14 @@ export default {
     "julia",
     "jackson",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/7582416c-67cd-3682-bf97-5f9883bdd972/full/200,/0/default.jpg"
   },
   {
    "id": "aic-193664",
    "name": "The Captive Slave (Ira Aldridge)",
    "sub": "John Philip Simpson, 1827",
-   "thumb": "https://www.artic.edu/iiif/2/5490fd49-dd52-4fd7-7d41-d871dcffae55/full/200,/0/default.jpg",
+   "thumb": "art/aic-193664.jpg",
    "full": "https://www.artic.edu/iiif/2/5490fd49-dd52-4fd7-7d41-d871dcffae55/full/843,/0/default.jpg",
    "alt": "Painting of a dark-skinned man seated and wearing a red open-necked tunic. He looks up to the right. His wrists are shackled and a large chain rests at his right, running down the bench he sits upon.",
    "meta": {
@@ -150,13 +154,14 @@ export default {
     "captive",
     "slave",
     "aldridge"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/5490fd49-dd52-4fd7-7d41-d871dcffae55/full/200,/0/default.jpg"
   },
   {
    "id": "aic-24",
    "name": "Portrait of Edouard Molé",
    "sub": "Robert Nanteuil, 1653",
-   "thumb": "https://www.artic.edu/iiif/2/5df51c9d-dac5-d962-4d4b-300339219e54/full/200,/0/default.jpg",
+   "thumb": "art/aic-24.jpg",
    "full": "https://www.artic.edu/iiif/2/5df51c9d-dac5-d962-4d4b-300339219e54/full/843,/0/default.jpg",
    "alt": "A work made of engraving on paper.",
    "meta": {
@@ -177,13 +182,14 @@ export default {
     "portrait",
     "edouard",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/5df51c9d-dac5-d962-4d4b-300339219e54/full/200,/0/default.jpg"
   },
   {
    "id": "aic-87467",
    "name": "Édouard Manet",
    "sub": "Henri Fantin-Latour, 1867",
-   "thumb": "https://www.artic.edu/iiif/2/dd4f9115-150c-2f1a-0f37-50899553d6b4/full/200,/0/default.jpg",
+   "thumb": "art/aic-87467.jpg",
    "full": "https://www.artic.edu/iiif/2/dd4f9115-150c-2f1a-0f37-50899553d6b4/full/843,/0/default.jpg",
    "alt": "Portrait of a straight-faced, light-skinned man with a bushy, light-brown beard and rosy cheeks wearing a dark vest, jacket, and shiny top hat. He grasps a thin cane, held horizontally, with both hands.",
    "meta": {
@@ -209,13 +215,14 @@ export default {
     "european",
     "douard",
     "manet"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/dd4f9115-150c-2f1a-0f37-50899553d6b4/full/200,/0/default.jpg"
   },
   {
    "id": "aic-27307",
    "name": "Madame de Pastoret and Her Son",
    "sub": "Jacques Louis David, 1791–92",
-   "thumb": "https://www.artic.edu/iiif/2/72227c9e-413c-8930-477d-5a90e0a2123c/full/200,/0/default.jpg",
+   "thumb": "art/aic-27307.jpg",
    "full": "https://www.artic.edu/iiif/2/72227c9e-413c-8930-477d-5a90e0a2123c/full/843,/0/default.jpg",
    "alt": "Large painting of young woman in white dress sitting next to crib.",
    "meta": {
@@ -241,13 +248,14 @@ export default {
     "european",
     "madame",
     "pastoret"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/72227c9e-413c-8930-477d-5a90e0a2123c/full/200,/0/default.jpg"
   },
   {
    "id": "aic-719",
    "name": "A Burgher of Calais (Jean d'Aire)",
    "sub": "Auguste Rodin, Modeled 1889",
-   "thumb": "https://www.artic.edu/iiif/2/d0a72b06-f1ee-4464-d58c-5e39bc0534b3/full/200,/0/default.jpg",
+   "thumb": "art/aic-719.jpg",
    "full": "https://www.artic.edu/iiif/2/d0a72b06-f1ee-4464-d58c-5e39bc0534b3/full/843,/0/default.jpg",
    "alt": "A work made of plaster.",
    "meta": {
@@ -273,13 +281,14 @@ export default {
     "jean",
     "aire",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d0a72b06-f1ee-4464-d58c-5e39bc0534b3/full/200,/0/default.jpg"
   },
   {
    "id": "aic-144965",
    "name": "Bust of Anne-Marie-Louise Thomas de Domangeville de Sérilly,…",
    "sub": "Jean Antoine Houdon, 1780",
-   "thumb": "https://www.artic.edu/iiif/2/fae6d055-fe95-17e2-a00a-c2307ace531c/full/200,/0/default.jpg",
+   "thumb": "art/aic-144965.jpg",
    "full": "https://www.artic.edu/iiif/2/fae6d055-fe95-17e2-a00a-c2307ace531c/full/843,/0/default.jpg",
    "alt": "A work made of marble.",
    "meta": {
@@ -305,13 +314,14 @@ export default {
     "thomas",
     "domangeville",
     "rilly"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/fae6d055-fe95-17e2-a00a-c2307ace531c/full/200,/0/default.jpg"
   },
   {
    "id": "aic-24684",
    "name": "Francesco de' Medici",
    "sub": "Alessandro Allori, c. 1560",
-   "thumb": "https://www.artic.edu/iiif/2/9a29cc5d-3779-c9ab-2aa2-0df7b6c3f391/full/200,/0/default.jpg",
+   "thumb": "art/aic-24684.jpg",
    "full": "https://www.artic.edu/iiif/2/9a29cc5d-3779-c9ab-2aa2-0df7b6c3f391/full/843,/0/default.jpg",
    "alt": "A work made of oil on panel.",
    "meta": {
@@ -332,13 +342,14 @@ export default {
     "francesco",
     "medici",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/9a29cc5d-3779-c9ab-2aa2-0df7b6c3f391/full/200,/0/default.jpg"
   },
   {
    "id": "aic-23119",
    "name": "Village Among the Trees",
    "sub": "Master of the Small Landscapes, c. 1560",
-   "thumb": "https://www.artic.edu/iiif/2/1e452e34-3a2b-0dca-35c3-c7236c612985/full/200,/0/default.jpg",
+   "thumb": "art/aic-23119.jpg",
    "full": "https://www.artic.edu/iiif/2/1e452e34-3a2b-0dca-35c3-c7236c612985/full/843,/0/default.jpg",
    "alt": "A work made of pen and brown ink, heightened with opaque white watercolor and touches of pink and yellow watercolor, over black chalk, on blue tinted laid paper, laid down on laid paper.",
    "meta": {
@@ -364,13 +375,14 @@ export default {
     "over",
     "black",
     "chalk"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/1e452e34-3a2b-0dca-35c3-c7236c612985/full/200,/0/default.jpg"
   },
   {
    "id": "aic-874",
    "name": "Landscape",
    "sub": "Jean Charles Cazin, c. 1895",
-   "thumb": "https://www.artic.edu/iiif/2/3a34f988-f779-2e96-1786-8945b6b9c87d/full/200,/0/default.jpg",
+   "thumb": "art/aic-874.jpg",
    "full": "https://www.artic.edu/iiif/2/3a34f988-f779-2e96-1786-8945b6b9c87d/full/843,/0/default.jpg",
    "alt": "Painting of linens drying on a fence in a field under a dark, overcast sky, a dirt road at left leading to a small village.",
    "meta": {
@@ -394,13 +406,14 @@ export default {
     "european",
     "landscape",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/3a34f988-f779-2e96-1786-8945b6b9c87d/full/200,/0/default.jpg"
   },
   {
    "id": "aic-146701",
    "name": "Mountain Brook",
    "sub": "Albert Bierstadt, 1863",
-   "thumb": "https://www.artic.edu/iiif/2/d55b0cfc-0716-d6cd-3b38-5742903ce046/full/200,/0/default.jpg",
+   "thumb": "art/aic-146701.jpg",
    "full": "https://www.artic.edu/iiif/2/d55b0cfc-0716-d6cd-3b38-5742903ce046/full/843,/0/default.jpg",
    "alt": "Painting of a small stream in the middle of the woods. In the center of the painting, there is a small waterfall over a large boulder. Radiant beams of sunlight penetrate the thick forest of birch and other trees, and a small bird sings from a broken branch over the waterfall.",
    "meta": {
@@ -420,13 +433,14 @@ export default {
     "mountain",
     "brook",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d55b0cfc-0716-d6cd-3b38-5742903ce046/full/200,/0/default.jpg"
   },
   {
    "id": "aic-90048",
    "name": "Distant View of Niagara Falls",
    "sub": "Thomas Cole, 1830",
-   "thumb": "https://www.artic.edu/iiif/2/18092196-50ae-3ff1-9205-1b3110e966c3/full/200,/0/default.jpg",
+   "thumb": "art/aic-90048.jpg",
    "full": "https://www.artic.edu/iiif/2/18092196-50ae-3ff1-9205-1b3110e966c3/full/843,/0/default.jpg",
    "alt": "Painting of a vast autumn scene with two very small figures in Indigenous clothing standing on a cliff overlooking a massive waterfall in the distance.",
    "meta": {
@@ -450,13 +464,14 @@ export default {
     "falls",
     "nineteenth_century",
     "sculpture"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/18092196-50ae-3ff1-9205-1b3110e966c3/full/200,/0/default.jpg"
   },
   {
    "id": "aic-68792",
    "name": "A Marine",
    "sub": "George Inness, c. 1874–75",
-   "thumb": "https://www.artic.edu/iiif/2/3d2d0842-312e-8d48-708b-d6adde0777bf/full/200,/0/default.jpg",
+   "thumb": "art/aic-68792.jpg",
    "full": "https://www.artic.edu/iiif/2/3d2d0842-312e-8d48-708b-d6adde0777bf/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -475,13 +490,14 @@ export default {
     "arts",
     "marine",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/3d2d0842-312e-8d48-708b-d6adde0777bf/full/200,/0/default.jpg"
   },
   {
    "id": "aic-120163",
    "name": "Capture of the Tripoli by the Enterprise",
    "sub": "Thomas Birch, 1806–12",
-   "thumb": "https://www.artic.edu/iiif/2/2b219d21-c128-ea2e-cb0b-69d2e9e98e5e/full/200,/0/default.jpg",
+   "thumb": "art/aic-120163.jpg",
    "full": "https://www.artic.edu/iiif/2/2b219d21-c128-ea2e-cb0b-69d2e9e98e5e/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -502,13 +518,14 @@ export default {
     "tripoli",
     "enterprise",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/2b219d21-c128-ea2e-cb0b-69d2e9e98e5e/full/200,/0/default.jpg"
   },
   {
    "id": "aic-64715",
    "name": "After a Summer Shower",
    "sub": "George Inness, 1894",
-   "thumb": "https://www.artic.edu/iiif/2/a9546ba5-6191-4e04-e209-d22a10e7d0d7/full/200,/0/default.jpg",
+   "thumb": "art/aic-64715.jpg",
    "full": "https://www.artic.edu/iiif/2/a9546ba5-6191-4e04-e209-d22a10e7d0d7/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -529,13 +546,14 @@ export default {
     "summer",
     "shower",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/a9546ba5-6191-4e04-e209-d22a10e7d0d7/full/200,/0/default.jpg"
   },
   {
    "id": "aic-66042",
    "name": "Trompe-l'Oeil Still Life with a Flower Garland and a Curtain",
    "sub": "Adriaen van der Spelt, 1658",
-   "thumb": "https://www.artic.edu/iiif/2/4a04138f-43d8-cd9f-5ac4-478cd8828210/full/200,/0/default.jpg",
+   "thumb": "art/aic-66042.jpg",
    "full": "https://www.artic.edu/iiif/2/4a04138f-43d8-cd9f-5ac4-478cd8828210/full/843,/0/default.jpg",
    "alt": "A work made of oil on panel.",
    "meta": {
@@ -561,13 +579,14 @@ export default {
     "flower",
     "garland",
     "curtain"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/4a04138f-43d8-cd9f-5ac4-478cd8828210/full/200,/0/default.jpg"
   },
   {
    "id": "aic-111377",
    "name": "For Sunday's Dinner",
    "sub": "William Michael Harnett, 1888",
-   "thumb": "https://www.artic.edu/iiif/2/3cea045a-92d6-36cf-1508-2c99ea740218/full/200,/0/default.jpg",
+   "thumb": "art/aic-111377.jpg",
    "full": "https://www.artic.edu/iiif/2/3cea045a-92d6-36cf-1508-2c99ea740218/full/843,/0/default.jpg",
    "alt": "A plucked chicken, a few stray feathers remaining, hangs upside-down by one foot, illuminated. Behind it the metal hinges and wood panels of a door are visible.",
    "meta": {
@@ -588,13 +607,14 @@ export default {
     "sunday",
     "dinner",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/3cea045a-92d6-36cf-1508-2c99ea740218/full/200,/0/default.jpg"
   },
   {
    "id": "aic-181777",
    "name": "The Irish Question",
    "sub": "De Scott Evans, 1880s",
-   "thumb": "https://www.artic.edu/iiif/2/6754947f-4ccf-b3ff-41ee-45b738534769/full/200,/0/default.jpg",
+   "thumb": "art/aic-181777.jpg",
    "full": "https://www.artic.edu/iiif/2/6754947f-4ccf-b3ff-41ee-45b738534769/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -613,13 +633,14 @@ export default {
     "irish",
     "question",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/6754947f-4ccf-b3ff-41ee-45b738534769/full/200,/0/default.jpg"
   },
   {
    "id": "aic-44892",
    "name": "Fish (Still Life)",
    "sub": "Édouard Manet, 1864",
-   "thumb": "https://www.artic.edu/iiif/2/0cbe27e8-2fec-3445-bc48-ce40a8f2dc25/full/200,/0/default.jpg",
+   "thumb": "art/aic-44892.jpg",
    "full": "https://www.artic.edu/iiif/2/0cbe27e8-2fec-3445-bc48-ce40a8f2dc25/full/843,/0/default.jpg",
    "alt": "Still-life painting, fish, open oysters, eel, lemon on tablecloth.",
    "meta": {
@@ -645,13 +666,14 @@ export default {
     "european",
     "fish",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/0cbe27e8-2fec-3445-bc48-ce40a8f2dc25/full/200,/0/default.jpg"
   },
   {
    "id": "aic-21682",
    "name": "Still Life",
    "sub": "Pieter Claesz, c. 1625",
-   "thumb": "https://www.artic.edu/iiif/2/574695d5-6bf3-fe58-a1d5-e6cbb5e10c77/full/200,/0/default.jpg",
+   "thumb": "art/aic-21682.jpg",
    "full": "https://www.artic.edu/iiif/2/574695d5-6bf3-fe58-a1d5-e6cbb5e10c77/full/843,/0/default.jpg",
    "alt": "A work made of oil on panel.",
    "meta": {
@@ -672,13 +694,14 @@ export default {
     "life",
     "european",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/574695d5-6bf3-fe58-a1d5-e6cbb5e10c77/full/200,/0/default.jpg"
   },
   {
    "id": "aic-44065",
    "name": "Just Dessert",
    "sub": "William Michael Harnett, 1891",
-   "thumb": "https://www.artic.edu/iiif/2/e49ad195-1f62-2fd4-f4df-61f0f0f4951f/full/200,/0/default.jpg",
+   "thumb": "art/aic-44065.jpg",
    "full": "https://www.artic.edu/iiif/2/e49ad195-1f62-2fd4-f4df-61f0f0f4951f/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -699,13 +722,14 @@ export default {
     "just",
     "dessert",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/e49ad195-1f62-2fd4-f4df-61f0f0f4951f/full/200,/0/default.jpg"
   },
   {
    "id": "aic-62042",
    "name": "Still Life with Dead Game, Fruits, and Vegetables in a Market",
    "sub": "Frans Snyders, 1614",
-   "thumb": "https://www.artic.edu/iiif/2/d9bde524-38b2-4262-3338-e4d06a50746d/full/200,/0/default.jpg",
+   "thumb": "art/aic-62042.jpg",
    "full": "https://www.artic.edu/iiif/2/d9bde524-38b2-4262-3338-e4d06a50746d/full/843,/0/default.jpg",
    "alt": "An older man at left in red raises his hat toward a central table chaotically overflowing with dead game, fruits, and vegetables. The wings of dead birds and limbs of animals are splayed out at dramatic angles; a deer at center is suspended by his back legs. Live birds and a cat animate the scene.",
    "meta": {
@@ -731,13 +755,14 @@ export default {
     "fruits",
     "vegetables",
     "market"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d9bde524-38b2-4262-3338-e4d06a50746d/full/200,/0/default.jpg"
   },
   {
    "id": "aic-182381",
    "name": "An Abundance of Fruit",
    "sub": "Severin Roesen, c. 1860",
-   "thumb": "https://www.artic.edu/iiif/2/12f32e59-cba2-0a32-972e-cf4d7856560c/full/200,/0/default.jpg",
+   "thumb": "art/aic-182381.jpg",
    "full": "https://www.artic.edu/iiif/2/12f32e59-cba2-0a32-972e-cf4d7856560c/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -755,13 +780,14 @@ export default {
     "abundance",
     "fruit",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/12f32e59-cba2-0a32-972e-cf4d7856560c/full/200,/0/default.jpg"
   },
   {
    "id": "aic-145807",
    "name": "Thistles",
    "sub": "John Singer Sargent, 1883–89",
-   "thumb": "https://www.artic.edu/iiif/2/79b94ddd-e208-1993-01ab-98f75174fe88/full/200,/0/default.jpg",
+   "thumb": "art/aic-145807.jpg",
    "full": "https://www.artic.edu/iiif/2/79b94ddd-e208-1993-01ab-98f75174fe88/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -781,13 +807,14 @@ export default {
     "arts",
     "thistles",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/79b94ddd-e208-1993-01ab-98f75174fe88/full/200,/0/default.jpg"
   },
   {
    "id": "aic-24645",
    "name": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also kn…",
    "sub": "Katsushika Hokusai, 1830/33",
-   "thumb": "https://www.artic.edu/iiif/2/b3974542-b9b4-7568-fc4b-966738f61d78/full/200,/0/default.jpg",
+   "thumb": "art/aic-24645.jpg",
    "full": "https://www.artic.edu/iiif/2/b3974542-b9b4-7568-fc4b-966738f61d78/full/843,/0/default.jpg",
    "alt": "A crashing wave looms over two small ships, Mount Fuji in the background.",
    "meta": {
@@ -813,13 +840,14 @@ export default {
     "kanagawa",
     "nami",
     "also"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/b3974542-b9b4-7568-fc4b-966738f61d78/full/200,/0/default.jpg"
   },
   {
    "id": "aic-27764",
    "name": "Approaching Storm",
    "sub": "Eugène Louis Boudin, 1864",
-   "thumb": "https://www.artic.edu/iiif/2/04cb7292-b20b-b313-2c08-19e685b70e7e/full/200,/0/default.jpg",
+   "thumb": "art/aic-27764.jpg",
    "full": "https://www.artic.edu/iiif/2/04cb7292-b20b-b313-2c08-19e685b70e7e/full/843,/0/default.jpg",
    "alt": "A work made of oil on cradled panel.",
    "meta": {
@@ -842,13 +870,14 @@ export default {
     "approaching",
     "storm",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/04cb7292-b20b-b313-2c08-19e685b70e7e/full/200,/0/default.jpg"
   },
   {
    "id": "aic-889",
    "name": "Barks Fleeing Before the Storm",
    "sub": "Jules Dupré, 1870–75",
-   "thumb": "https://www.artic.edu/iiif/2/80df29cd-493f-23c0-3e51-4ddc38b3f34f/full/200,/0/default.jpg",
+   "thumb": "art/aic-889.jpg",
    "full": "https://www.artic.edu/iiif/2/80df29cd-493f-23c0-3e51-4ddc38b3f34f/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -874,13 +903,14 @@ export default {
     "european",
     "barks",
     "fleeing"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/80df29cd-493f-23c0-3e51-4ddc38b3f34f/full/200,/0/default.jpg"
   },
   {
    "id": "aic-25853",
    "name": "Wine Cistern",
    "sub": "Francesco Durantino, 1553",
-   "thumb": "https://www.artic.edu/iiif/2/a69557c8-2883-6634-5cf0-93f060ec280a/full/200,/0/default.jpg",
+   "thumb": "art/aic-25853.jpg",
    "full": "https://www.artic.edu/iiif/2/a69557c8-2883-6634-5cf0-93f060ec280a/full/843,/0/default.jpg",
    "alt": "Large bowl completely covered in scenes of battles on land and sea.",
    "meta": {
@@ -903,13 +933,14 @@ export default {
     "wine",
     "cistern",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/a69557c8-2883-6634-5cf0-93f060ec280a/full/200,/0/default.jpg"
   },
   {
    "id": "aic-21914",
    "name": "The Storm",
    "sub": "Georges Michel, c. 1814–c. 1830",
-   "thumb": "https://www.artic.edu/iiif/2/ff7cae53-a6f6-9965-70e9-7e264ead9265/full/200,/0/default.jpg",
+   "thumb": "art/aic-21914.jpg",
    "full": "https://www.artic.edu/iiif/2/ff7cae53-a6f6-9965-70e9-7e264ead9265/full/843,/0/default.jpg",
    "alt": "A work made of oil on panel.",
    "meta": {
@@ -934,13 +965,14 @@ export default {
     "european",
     "storm",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/ff7cae53-a6f6-9965-70e9-7e264ead9265/full/200,/0/default.jpg"
   },
   {
    "id": "aic-65353",
    "name": "The Storm",
    "sub": "George Inness, 1876",
-   "thumb": "https://www.artic.edu/iiif/2/05dcffe0-97a9-cd59-df71-73731a5dbd9f/full/200,/0/default.jpg",
+   "thumb": "art/aic-65353.jpg",
    "full": "https://www.artic.edu/iiif/2/05dcffe0-97a9-cd59-df71-73731a5dbd9f/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -959,13 +991,14 @@ export default {
     "arts",
     "storm",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/05dcffe0-97a9-cd59-df71-73731a5dbd9f/full/200,/0/default.jpg"
   },
   {
    "id": "aic-13151",
    "name": "Storm",
    "sub": "Anders Zorn, 1891",
-   "thumb": "https://www.artic.edu/iiif/2/aef4f326-4330-ff4a-2ea1-12c4678f08c0/full/200,/0/default.jpg",
+   "thumb": "art/aic-13151.jpg",
    "full": "https://www.artic.edu/iiif/2/aef4f326-4330-ff4a-2ea1-12c4678f08c0/full/843,/0/default.jpg",
    "alt": "A work made of etching on ivory laid paper.",
    "meta": {
@@ -987,13 +1020,14 @@ export default {
     "drawing",
     "storm",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/aef4f326-4330-ff4a-2ea1-12c4678f08c0/full/200,/0/default.jpg"
   },
   {
    "id": "aic-16779",
    "name": "Breaking Storm, Coast of Maine",
    "sub": "Winslow Homer, 1894",
-   "thumb": "https://www.artic.edu/iiif/2/6794f986-98db-4e2e-9b38-8d13b7201d10/full/200,/0/default.jpg",
+   "thumb": "art/aic-16779.jpg",
    "full": "https://www.artic.edu/iiif/2/6794f986-98db-4e2e-9b38-8d13b7201d10/full/843,/0/default.jpg",
    "alt": "A work made of transparent watercolor, with touches of opaque watercolor, rewetting, blotting and traces of scraping, on thick, rough-textured, ivory wove paper.",
    "meta": {
@@ -1019,13 +1053,14 @@ export default {
     "thick",
     "rough",
     "textured"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/6794f986-98db-4e2e-9b38-8d13b7201d10/full/200,/0/default.jpg"
   },
   {
    "id": "aic-40507",
    "name": "Christ in the Storm",
    "sub": "Heinrich Jansen, c. 1650",
-   "thumb": "https://www.artic.edu/iiif/2/e99fba95-e252-1cfc-4204-55d2f3143a5e/full/200,/0/default.jpg",
+   "thumb": "art/aic-40507.jpg",
    "full": "https://www.artic.edu/iiif/2/e99fba95-e252-1cfc-4204-55d2f3143a5e/full/843,/0/default.jpg",
    "alt": "A work made of oil on panel.",
    "meta": {
@@ -1050,13 +1085,14 @@ export default {
     "christ",
     "storm",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/e99fba95-e252-1cfc-4204-55d2f3143a5e/full/200,/0/default.jpg"
   },
   {
    "id": "aic-57215",
    "name": "Storm in Umbria",
    "sub": "Elihu Vedder, 1875",
-   "thumb": "https://www.artic.edu/iiif/2/976bc367-269d-17ff-0151-16b9c973aae4/full/200,/0/default.jpg",
+   "thumb": "art/aic-57215.jpg",
    "full": "https://www.artic.edu/iiif/2/976bc367-269d-17ff-0151-16b9c973aae4/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -1076,13 +1112,14 @@ export default {
     "storm",
     "umbria",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/976bc367-269d-17ff-0151-16b9c973aae4/full/200,/0/default.jpg"
   },
   {
    "id": "aic-9021",
    "name": "The Bewitched Mill",
    "sub": "Franz Marc, 1913",
-   "thumb": "https://www.artic.edu/iiif/2/6829aab0-8d0e-9438-aebf-a1a379572951/full/200,/0/default.jpg",
+   "thumb": "art/aic-9021.jpg",
    "full": "https://www.artic.edu/iiif/2/6829aab0-8d0e-9438-aebf-a1a379572951/full/843,/0/default.jpg",
    "alt": "Vibrantly colored geometric painting of a central white and blue waterfall with birds visible through it. A stylized red jungle cat and black wild boar drink at bottom right. Red water wheel at left, angular blue and white cityscape top at left, tree top at right.",
    "meta": {
@@ -1102,13 +1139,14 @@ export default {
     "bewitched",
     "mill",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/6829aab0-8d0e-9438-aebf-a1a379572951/full/200,/0/default.jpg"
   },
   {
    "id": "aic-57191",
    "name": "On the Nile",
    "sub": "Eugène Fromentin, 1871",
-   "thumb": "https://www.artic.edu/iiif/2/0eb5b4c2-517a-cd17-bca8-ff290e90059c/full/200,/0/default.jpg",
+   "thumb": "art/aic-57191.jpg",
    "full": "https://www.artic.edu/iiif/2/0eb5b4c2-517a-cd17-bca8-ff290e90059c/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -1128,13 +1166,14 @@ export default {
     "european",
     "nile",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/0eb5b4c2-517a-cd17-bca8-ff290e90059c/full/200,/0/default.jpg"
   },
   {
    "id": "aic-63554",
    "name": "Big River, from the Rancherie, Mendocino, California",
    "sub": "Carleton Watkins, 1863",
-   "thumb": "https://www.artic.edu/iiif/2/0ac9663b-e17e-471d-e4e3-6c60fc800704/full/200,/0/default.jpg",
+   "thumb": "art/aic-63554.jpg",
    "full": "https://www.artic.edu/iiif/2/0ac9663b-e17e-471d-e4e3-6c60fc800704/full/843,/0/default.jpg",
    "alt": "Black and white photograph of river seen through pine tree forest.",
    "meta": {
@@ -1160,13 +1199,14 @@ export default {
     "rancherie",
     "mendocino",
     "california"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/0ac9663b-e17e-471d-e4e3-6c60fc800704/full/200,/0/default.jpg"
   },
   {
    "id": "aic-883",
    "name": "Wounded Lioness",
    "sub": "Pierre Andrieu, c. 1850",
-   "thumb": "https://www.artic.edu/iiif/2/565dd29f-6c02-3f31-3db2-46902059f047/full/200,/0/default.jpg",
+   "thumb": "art/aic-883.jpg",
    "full": "https://www.artic.edu/iiif/2/565dd29f-6c02-3f31-3db2-46902059f047/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -1188,13 +1228,14 @@ export default {
     "wounded",
     "lioness",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/565dd29f-6c02-3f31-3db2-46902059f047/full/200,/0/default.jpg"
   },
   {
    "id": "aic-111074",
    "name": "The Grand Canal, Venice",
    "sub": "Francesco Guardi, c. 1760",
-   "thumb": "https://www.artic.edu/iiif/2/f23f8a3b-66b8-9061-811c-c65dd0a32ebd/full/200,/0/default.jpg",
+   "thumb": "art/aic-111074.jpg",
    "full": "https://www.artic.edu/iiif/2/f23f8a3b-66b8-9061-811c-c65dd0a32ebd/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -1220,13 +1261,14 @@ export default {
     "canal",
     "venice",
     "baroque"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/f23f8a3b-66b8-9061-811c-c65dd0a32ebd/full/200,/0/default.jpg"
   },
   {
    "id": "aic-104177",
    "name": "Main Street, Mahanoy City",
    "sub": "Joseph Pennell, 1908",
-   "thumb": "https://www.artic.edu/iiif/2/47ddf32b-b974-9b79-4127-04e66c906208/full/200,/0/default.jpg",
+   "thumb": "art/aic-104177.jpg",
    "full": "https://www.artic.edu/iiif/2/47ddf32b-b974-9b79-4127-04e66c906208/full/843,/0/default.jpg",
    "alt": "A work made of etching and drypoint on ivory laid paper.",
    "meta": {
@@ -1252,13 +1294,14 @@ export default {
     "mahanoy",
     "city",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/47ddf32b-b974-9b79-4127-04e66c906208/full/200,/0/default.jpg"
   },
   {
    "id": "aic-82719",
    "name": "City Street",
    "sub": "William Burges, 1876",
-   "thumb": "https://www.artic.edu/iiif/2/65906ea3-e691-51c9-2226-8337b12911ff/full/200,/0/default.jpg",
+   "thumb": "art/aic-82719.jpg",
    "full": "https://www.artic.edu/iiif/2/65906ea3-e691-51c9-2226-8337b12911ff/full/843,/0/default.jpg",
    "alt": "A work made of black crayon and graphite on tan wove paper.",
    "meta": {
@@ -1284,13 +1327,14 @@ export default {
     "prints",
     "city",
     "street"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/65906ea3-e691-51c9-2226-8337b12911ff/full/200,/0/default.jpg"
   },
   {
    "id": "aic-234026",
    "name": "King Street, City",
    "sub": "Thomas Annan, 1868",
-   "thumb": "https://www.artic.edu/iiif/2/57b83e1c-45d3-cbe6-5b4f-90687f9be154/full/200,/0/default.jpg",
+   "thumb": "art/aic-234026.jpg",
    "full": "https://www.artic.edu/iiif/2/57b83e1c-45d3-cbe6-5b4f-90687f9be154/full/843,/0/default.jpg",
    "alt": "A work made of photogravure, plate 22 from the book \"the old closes & streets of glasgow\" (1900).",
    "meta": {
@@ -1316,13 +1360,14 @@ export default {
     "king",
     "street",
     "city"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/57b83e1c-45d3-cbe6-5b4f-90687f9be154/full/200,/0/default.jpg"
   },
   {
    "id": "aic-234050",
    "name": "Nelson Street, City",
    "sub": "James Craig Annan, 1899",
-   "thumb": "https://www.artic.edu/iiif/2/1f43f04e-a059-b628-8052-93369593c4d2/full/200,/0/default.jpg",
+   "thumb": "art/aic-234050.jpg",
    "full": "https://www.artic.edu/iiif/2/1f43f04e-a059-b628-8052-93369593c4d2/full/843,/0/default.jpg",
    "alt": "A work made of photogravure, plate 46 from the book \"the old closes & streets of glasgow\" (1900).",
    "meta": {
@@ -1348,13 +1393,14 @@ export default {
     "nelson",
     "street",
     "city"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/1f43f04e-a059-b628-8052-93369593c4d2/full/200,/0/default.jpg"
   },
   {
    "id": "aic-11143",
    "name": "The Fear of Love",
    "sub": "Jean-Louis Lemoyne, 1742",
-   "thumb": "https://www.artic.edu/iiif/2/70f69d6a-2cac-0e55-9913-7027ca19f5cb/full/200,/0/default.jpg",
+   "thumb": "art/aic-11143.jpg",
    "full": "https://www.artic.edu/iiif/2/70f69d6a-2cac-0e55-9913-7027ca19f5cb/full/843,/0/default.jpg",
    "alt": "Terracotta sculpture of a standing woman. Her right arm clutches fabric as a Cupid on her right pulls the fabric at her waist.",
    "meta": {
@@ -1375,13 +1421,14 @@ export default {
     "fear",
     "love",
     "baroque"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/70f69d6a-2cac-0e55-9913-7027ca19f5cb/full/200,/0/default.jpg"
   },
   {
    "id": "aic-86780",
    "name": "Mother and Child",
    "sub": "Julius Gari Melchers, c. 1906",
-   "thumb": "https://www.artic.edu/iiif/2/49f45b42-b565-199f-6ef5-f09dea142205/full/200,/0/default.jpg",
+   "thumb": "art/aic-86780.jpg",
    "full": "https://www.artic.edu/iiif/2/49f45b42-b565-199f-6ef5-f09dea142205/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -1402,13 +1449,14 @@ export default {
     "mother",
     "child",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/49f45b42-b565-199f-6ef5-f09dea142205/full/200,/0/default.jpg"
   },
   {
    "id": "aic-4573",
    "name": "Mother Nursing Child",
    "sub": "Eugène Carrière, n.d.",
-   "thumb": "https://www.artic.edu/iiif/2/6589721f-bbf9-29fd-1520-a59667fe5a90/full/200,/0/default.jpg",
+   "thumb": "art/aic-4573.jpg",
    "full": "https://www.artic.edu/iiif/2/6589721f-bbf9-29fd-1520-a59667fe5a90/full/843,/0/default.jpg",
    "alt": "A work made of charcoal on ivory wove paper.",
    "meta": {
@@ -1434,13 +1482,14 @@ export default {
     "mother",
     "nursing",
     "child"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/6589721f-bbf9-29fd-1520-a59667fe5a90/full/200,/0/default.jpg"
   },
   {
    "id": "aic-15955",
    "name": "Satyr Mother and Child",
    "sub": "Workshop of Severo da Ravenna (Severo Calzetta), 1510–40",
-   "thumb": "https://www.artic.edu/iiif/2/9bbf26ab-3e04-2fda-bbbb-ac76ddb65b22/full/200,/0/default.jpg",
+   "thumb": "art/aic-15955.jpg",
    "full": "https://www.artic.edu/iiif/2/9bbf26ab-3e04-2fda-bbbb-ac76ddb65b22/full/843,/0/default.jpg",
    "alt": "A work made of bronze with dark brown patina.",
    "meta": {
@@ -1466,13 +1515,14 @@ export default {
     "italian",
     "satyr",
     "mother"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/9bbf26ab-3e04-2fda-bbbb-ac76ddb65b22/full/200,/0/default.jpg"
   },
   {
    "id": "aic-125774",
    "name": "Mother-and-Child Figure (Bwanga bwa Chibola)",
    "sub": "Luluwa, Mid–late 19th century",
-   "thumb": "https://www.artic.edu/iiif/2/a766aef8-3bd6-8516-6691-223d9f8239b4/full/200,/0/default.jpg",
+   "thumb": "art/aic-125774.jpg",
    "full": "https://www.artic.edu/iiif/2/a766aef8-3bd6-8516-6691-223d9f8239b4/full/843,/0/default.jpg",
    "alt": "A work made of wood and pigment.",
    "meta": {
@@ -1498,13 +1548,14 @@ export default {
     "bwanga",
     "chibola",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/a766aef8-3bd6-8516-6691-223d9f8239b4/full/200,/0/default.jpg"
   },
   {
    "id": "aic-181",
    "name": "Amphora (Storage Jar)",
    "sub": "Ixion Painter, 340-330 BCE",
-   "thumb": "https://www.artic.edu/iiif/2/d8fab7c6-8cc9-1c02-18db-0f198775ccc9/full/200,/0/default.jpg",
+   "thumb": "art/aic-181.jpg",
    "full": "https://www.artic.edu/iiif/2/d8fab7c6-8cc9-1c02-18db-0f198775ccc9/full/843,/0/default.jpg",
    "alt": "Terracotta vessel with a narrow neck and small, curved handles, areas of black indicating lost portions of a battle scene.",
    "meta": {
@@ -1525,13 +1576,14 @@ export default {
     "amphora",
     "storage",
     "medieval"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d8fab7c6-8cc9-1c02-18db-0f198775ccc9/full/200,/0/default.jpg"
   },
   {
    "id": "aic-895",
    "name": "Man with Lance Riding through the Snow",
    "sub": "Adolphe Schreyer, c. 1880",
-   "thumb": "https://www.artic.edu/iiif/2/fa96ef54-c3b1-8f4d-390a-219f7bc64c4a/full/200,/0/default.jpg",
+   "thumb": "art/aic-895.jpg",
    "full": "https://www.artic.edu/iiif/2/fa96ef54-c3b1-8f4d-390a-219f7bc64c4a/full/843,/0/default.jpg",
    "alt": "A hunched figure on horseback holds a thin shaft as he makes his way through windy, snowy weather suggested by strokes of white, gray, and brown.",
    "meta": {
@@ -1557,13 +1609,14 @@ export default {
     "with",
     "lance",
     "riding"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/fa96ef54-c3b1-8f4d-390a-219f7bc64c4a/full/200,/0/default.jpg"
   },
   {
    "id": "aic-198337",
    "name": "Amphora (Storage Jar)",
    "sub": "Ancient Etruscan, 530-520 BCE",
-   "thumb": "https://www.artic.edu/iiif/2/ea80aeee-859c-9577-af83-1b7fef0bf17c/full/200,/0/default.jpg",
+   "thumb": "art/aic-198337.jpg",
    "full": "https://www.artic.edu/iiif/2/ea80aeee-859c-9577-af83-1b7fef0bf17c/full/843,/0/default.jpg",
    "alt": "A work made of terracotta, black-figure.",
    "meta": {
@@ -1584,13 +1637,14 @@ export default {
     "amphora",
     "storage",
     "medieval"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/ea80aeee-859c-9577-af83-1b7fef0bf17c/full/200,/0/default.jpg"
   },
   {
    "id": "aic-885",
    "name": "A Mounted Officer",
    "sub": "Jean Baptiste Édouard Detaille, 1877",
-   "thumb": "https://www.artic.edu/iiif/2/9c1e2826-e79b-4b4d-73f9-2ba8c8b00180/full/200,/0/default.jpg",
+   "thumb": "art/aic-885.jpg",
    "full": "https://www.artic.edu/iiif/2/9c1e2826-e79b-4b4d-73f9-2ba8c8b00180/full/843,/0/default.jpg",
    "alt": "A man sits on a brown horse at center wearing a soldier's uniform, red pants, and blue and gray jacket, with other soldiers in the background. The ground appears wet, the sky vast and gray. A weapon hangs from his side.",
    "meta": {
@@ -1616,13 +1670,14 @@ export default {
     "european",
     "mounted",
     "officer"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/9c1e2826-e79b-4b4d-73f9-2ba8c8b00180/full/200,/0/default.jpg"
   },
   {
    "id": "aic-81533",
    "name": "The Races at Longchamp",
    "sub": "Édouard Manet, 1866",
-   "thumb": "https://www.artic.edu/iiif/2/e9ce5aca-4c34-c8dd-b8a1-91b3e3197211/full/200,/0/default.jpg",
+   "thumb": "art/aic-81533.jpg",
    "full": "https://www.artic.edu/iiif/2/e9ce5aca-4c34-c8dd-b8a1-91b3e3197211/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -1644,13 +1699,14 @@ export default {
     "races",
     "longchamp",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/e9ce5aca-4c34-c8dd-b8a1-91b3e3197211/full/200,/0/default.jpg"
   },
   {
    "id": "aic-145840",
    "name": "Cheval Turk",
    "sub": "Antoine Louis Barye, 1850–1900",
-   "thumb": "https://www.artic.edu/iiif/2/536df30f-02c0-972d-2141-9dc4542e3a8c/full/200,/0/default.jpg",
+   "thumb": "art/aic-145840.jpg",
    "full": "https://www.artic.edu/iiif/2/536df30f-02c0-972d-2141-9dc4542e3a8c/full/843,/0/default.jpg",
    "alt": "A work made of bronze.",
    "meta": {
@@ -1672,13 +1728,14 @@ export default {
     "cheval",
     "turk",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/536df30f-02c0-972d-2141-9dc4542e3a8c/full/200,/0/default.jpg"
   },
   {
    "id": "aic-15468",
    "name": "Saint George and the Dragon",
    "sub": "Bernat Martorell, 1434–35",
-   "thumb": "https://www.artic.edu/iiif/2/8a0e4ac9-43ea-bc3e-884b-ee27f8a10501/full/200,/0/default.jpg",
+   "thumb": "art/aic-15468.jpg",
    "full": "https://www.artic.edu/iiif/2/8a0e4ac9-43ea-bc3e-884b-ee27f8a10501/full/843,/0/default.jpg",
    "alt": "St. George on white horse, piercing green, gold dragon",
    "meta": {
@@ -1702,13 +1759,14 @@ export default {
     "george",
     "dragon",
     "medieval"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/8a0e4ac9-43ea-bc3e-884b-ee27f8a10501/full/200,/0/default.jpg"
   },
   {
    "id": "aic-181145",
    "name": "Cup in the Form of a Horse and Rider",
    "sub": "Hans Ludwig Kienle, 1630",
-   "thumb": "https://www.artic.edu/iiif/2/1dcb1fd9-8254-8098-586c-e5b117c00871/full/200,/0/default.jpg",
+   "thumb": "art/aic-181145.jpg",
    "full": "https://www.artic.edu/iiif/2/1dcb1fd9-8254-8098-586c-e5b117c00871/full/843,/0/default.jpg",
    "alt": "Small statue, silver male rider on gold horse on its hind legs.",
    "meta": {
@@ -1732,13 +1790,14 @@ export default {
     "horse",
     "rider",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/1dcb1fd9-8254-8098-586c-e5b117c00871/full/200,/0/default.jpg"
   },
   {
    "id": "aic-10083",
    "name": "Dupondius (Coin) Portraying Germanicus Caesar",
    "sub": "Ancient Roman, 15 BCE-19 CE",
-   "thumb": "https://www.artic.edu/iiif/2/09c7e9d9-7c3e-fe62-d236-108d44710612/full/200,/0/default.jpg",
+   "thumb": "art/aic-10083.jpg",
    "full": "https://www.artic.edu/iiif/2/09c7e9d9-7c3e-fe62-d236-108d44710612/full/843,/0/default.jpg",
    "alt": "A work made of bronze.",
    "meta": {
@@ -1763,13 +1822,14 @@ export default {
     "caesar",
     "medieval",
     "sculpture"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/09c7e9d9-7c3e-fe62-d236-108d44710612/full/200,/0/default.jpg"
   },
   {
    "id": "aic-138",
    "name": "Flower Girl in Holland",
    "sub": "George Hitchcock, 1887",
-   "thumb": "https://www.artic.edu/iiif/2/e72305c9-1a1c-8a36-7450-582619366338/full/200,/0/default.jpg",
+   "thumb": "art/aic-138.jpg",
    "full": "https://www.artic.edu/iiif/2/e72305c9-1a1c-8a36-7450-582619366338/full/843,/0/default.jpg",
    "alt": "Painting of a young woman outdoors in a light purple dress and head covering with a wooden yoke around her neck suspending large bundles of brightly colored flowers. She stands on a path adjacent to a river, facing the wall of a red-brick house at right.",
    "meta": {
@@ -1791,13 +1851,14 @@ export default {
     "girl",
     "holland",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/e72305c9-1a1c-8a36-7450-582619366338/full/200,/0/default.jpg"
   },
   {
    "id": "aic-76395",
    "name": "Flower Clouds",
    "sub": "Odilon Redon, c. 1903",
-   "thumb": "https://www.artic.edu/iiif/2/fb2077d9-82cc-ca7e-f450-5471d7f78c9a/full/200,/0/default.jpg",
+   "thumb": "art/aic-76395.jpg",
    "full": "https://www.artic.edu/iiif/2/fb2077d9-82cc-ca7e-f450-5471d7f78c9a/full/843,/0/default.jpg",
    "alt": "Pastel drawing of two figures in a sailboat, bright multi-colored clouds.",
    "meta": {
@@ -1823,13 +1884,14 @@ export default {
     "blue",
     "gray",
     "wove"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/fb2077d9-82cc-ca7e-f450-5471d7f78c9a/full/200,/0/default.jpg"
   },
   {
    "id": "aic-154235",
    "name": "The Girl by the Window",
    "sub": "Edvard Munch, 1893",
-   "thumb": "https://www.artic.edu/iiif/2/d7df2633-3b40-f570-c906-211503a37cde/full/200,/0/default.jpg",
+   "thumb": "art/aic-154235.jpg",
    "full": "https://www.artic.edu/iiif/2/d7df2633-3b40-f570-c906-211503a37cde/full/843,/0/default.jpg",
    "alt": "Loosely painted scene of a brown-haired girl in her nightgown standing in a dark room, gazing out a window into a brighter night, her face unseen and her hand drawing back the pale curtain. Light blues and pink whites dominate the girl and the window, while deep browns, blues, and greens color the darkened portions of her room.",
    "meta": {
@@ -1854,13 +1916,14 @@ export default {
     "girl",
     "window",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d7df2633-3b40-f570-c906-211503a37cde/full/200,/0/default.jpg"
   },
   {
    "id": "aic-111620",
    "name": "The Abduction of the Sabine Women",
    "sub": "Luca Giordano, c. 1675",
-   "thumb": "https://www.artic.edu/iiif/2/c01c7f64-0098-a2d5-56c2-3eb0b28f68ae/full/200,/0/default.jpg",
+   "thumb": "art/aic-111620.jpg",
    "full": "https://www.artic.edu/iiif/2/c01c7f64-0098-a2d5-56c2-3eb0b28f68ae/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -1886,13 +1949,14 @@ export default {
     "sabine",
     "women",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/c01c7f64-0098-a2d5-56c2-3eb0b28f68ae/full/200,/0/default.jpg"
   },
   {
    "id": "aic-14664",
    "name": "Moulin de la Galette",
    "sub": "Henri de Toulouse-Lautrec, 1889",
-   "thumb": "https://www.artic.edu/iiif/2/156aaed6-fe3c-a13c-f39e-55f381205929/full/200,/0/default.jpg",
+   "thumb": "art/aic-14664.jpg",
    "full": "https://www.artic.edu/iiif/2/156aaed6-fe3c-a13c-f39e-55f381205929/full/843,/0/default.jpg",
    "alt": "A scene in brown and green tones of people dancing indoors. In the foreground, three women stand near boothed tables while a man sits.",
    "meta": {
@@ -1918,13 +1982,14 @@ export default {
     "moulin",
     "galette",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/156aaed6-fe3c-a13c-f39e-55f381205929/full/200,/0/default.jpg"
   },
   {
    "id": "aic-887",
    "name": "Landscape with Figures",
    "sub": "Narcisse Virgile Diaz de la Peña, c. 1870",
-   "thumb": "https://www.artic.edu/iiif/2/ad3280c6-611a-c136-29b8-8f303a02f416/full/200,/0/default.jpg",
+   "thumb": "art/aic-887.jpg",
    "full": "https://www.artic.edu/iiif/2/ad3280c6-611a-c136-29b8-8f303a02f416/full/843,/0/default.jpg",
    "alt": "Nocturnal landscape painting with lush trees and a large patch of sky with visible brushstrokes. Multiple small, seated figures line the foreground.",
    "meta": {
@@ -1950,13 +2015,14 @@ export default {
     "european",
     "landscape",
     "with"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/ad3280c6-611a-c136-29b8-8f303a02f416/full/200,/0/default.jpg"
   },
   {
    "id": "aic-56905",
    "name": "Nocturne: Blue and Gold—Southampton Water",
    "sub": "James McNeill Whistler, 1872",
-   "thumb": "https://www.artic.edu/iiif/2/50034c7f-ce51-00f1-430e-a6f7efc233fc/full/200,/0/default.jpg",
+   "thumb": "art/aic-56905.jpg",
    "full": "https://www.artic.edu/iiif/2/50034c7f-ce51-00f1-430e-a6f7efc233fc/full/843,/0/default.jpg",
    "alt": "A sparsely painted waterside scene in dark tones with minimal ghostly shapes suggesting ships, yellow glitches of paint for light reflections, and the orb of an orange moon overhead.",
    "meta": {
@@ -1980,13 +2046,14 @@ export default {
     "southampton",
     "water",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/50034c7f-ce51-00f1-430e-a6f7efc233fc/full/200,/0/default.jpg"
   },
   {
    "id": "aic-64754",
    "name": "Moonrise",
    "sub": "George Inness, 1891",
-   "thumb": "https://www.artic.edu/iiif/2/4425984b-e241-6413-1404-cdac0fb06518/full/200,/0/default.jpg",
+   "thumb": "art/aic-64754.jpg",
    "full": "https://www.artic.edu/iiif/2/4425984b-e241-6413-1404-cdac0fb06518/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -2005,13 +2072,14 @@ export default {
     "arts",
     "moonrise",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/4425984b-e241-6413-1404-cdac0fb06518/full/200,/0/default.jpg"
   },
   {
    "id": "aic-110867",
    "name": "Tight-Rope Walker",
    "sub": "Jean Louis Forain, c. 1885",
-   "thumb": "https://www.artic.edu/iiif/2/f67d49b0-90a6-7aa3-29ab-77e5d1e9fd9c/full/200,/0/default.jpg",
+   "thumb": "art/aic-110867.jpg",
    "full": "https://www.artic.edu/iiif/2/f67d49b0-90a6-7aa3-29ab-77e5d1e9fd9c/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -2037,13 +2105,14 @@ export default {
     "tight",
     "rope",
     "walker"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/f67d49b0-90a6-7aa3-29ab-77e5d1e9fd9c/full/200,/0/default.jpg"
   },
   {
    "id": "aic-43714",
    "name": "E10: English Dining Room of the Georgian Period, 1770–90",
    "sub": "Narcissa Niblack Thorne, c. 1937",
-   "thumb": "https://www.artic.edu/iiif/2/0a2d277c-34e2-8c29-e142-4daea2546217/full/200,/0/default.jpg",
+   "thumb": "art/aic-43714.jpg",
    "full": "https://www.artic.edu/iiif/2/0a2d277c-34e2-8c29-e142-4daea2546217/full/843,/0/default.jpg",
    "alt": "Miniature Georgian-era dining room with pale green walls, ornate white trim, long glass table.",
    "meta": {
@@ -2067,13 +2136,14 @@ export default {
     "dining",
     "period",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/0a2d277c-34e2-8c29-e142-4daea2546217/full/200,/0/default.jpg"
   },
   {
    "id": "aic-270002",
    "name": "Interior. The Music Room, Strandgade 30",
    "sub": "Vilhelm Hammershøi, 1907",
-   "thumb": "https://www.artic.edu/iiif/2/15a0f792-0c21-406e-3e4d-ac8c2393c873/full/200,/0/default.jpg",
+   "thumb": "art/aic-270002.jpg",
    "full": "https://www.artic.edu/iiif/2/15a0f792-0c21-406e-3e4d-ac8c2393c873/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -2099,13 +2169,14 @@ export default {
     "room",
     "strandgade",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/15a0f792-0c21-406e-3e4d-ac8c2393c873/full/200,/0/default.jpg"
   },
   {
    "id": "aic-43768",
    "name": "E25: French Bathroom and Boudoir of the Revolutionary Period…",
    "sub": "Narcissa Niblack Thorne, c. 1937",
-   "thumb": "https://www.artic.edu/iiif/2/5663045a-4348-200a-967c-1dea1cb4580d/full/200,/0/default.jpg",
+   "thumb": "art/aic-43768.jpg",
    "full": "https://www.artic.edu/iiif/2/5663045a-4348-200a-967c-1dea1cb4580d/full/843,/0/default.jpg",
    "alt": "Miniature model of a large, stately room with a circular marble tub sunk into the floor's center and fireplace at right. A central archway reveals a sitting area beyond.",
    "meta": {
@@ -2130,13 +2201,14 @@ export default {
     "revolutionary",
     "period",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/5663045a-4348-200a-967c-1dea1cb4580d/full/200,/0/default.jpg"
   },
   {
    "id": "aic-43711",
    "name": "E9: English Drawing Room of the Georgian Period, 1770–1800",
    "sub": "Narcissa Niblack Thorne, c. 1937",
-   "thumb": "https://www.artic.edu/iiif/2/251f2720-f92f-6af2-759d-59510d410893/full/200,/0/default.jpg",
+   "thumb": "art/aic-43711.jpg",
    "full": "https://www.artic.edu/iiif/2/251f2720-f92f-6af2-759d-59510d410893/full/843,/0/default.jpg",
    "alt": "Miniature room with cream-colored walls with inset columns on the side walls and two columns at the back framing a dark wooden bookshelf. A large crystal chandelier hangs from a curved ceiling patterned with geometric designs in relief. A beige floral rug fills the floor, upon which a yellow couch and other upholstered wood furniture are unevenly spaced. On the right wall is an ornate fireplace with a mantle framing a painting of a landscape.",
    "meta": {
@@ -2160,13 +2232,14 @@ export default {
     "drawing",
     "period",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/251f2720-f92f-6af2-759d-59510d410893/full/200,/0/default.jpg"
   },
   {
    "id": "aic-43739",
    "name": "E17: French Bedroom, Late 16th Century",
    "sub": "Narcissa Niblack Thorne, c. 1937",
-   "thumb": "https://www.artic.edu/iiif/2/7c4cad25-92a8-a5cf-f6a3-46080aaa745a/full/200,/0/default.jpg",
+   "thumb": "art/aic-43739.jpg",
    "full": "https://www.artic.edu/iiif/2/7c4cad25-92a8-a5cf-f6a3-46080aaa745a/full/843,/0/default.jpg",
    "alt": "Miniature of a very dark, ornate bedroom with a partially canopied green bed at center, brown parquet flooring, and deep brown and golden wallpaper. A gold chandelier hangs in the center, and two dark-brown cupboards sit on either side of the room. On the right is also a white and brown fireplace.",
    "meta": {
@@ -2190,13 +2263,14 @@ export default {
     "late",
     "century",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/7c4cad25-92a8-a5cf-f6a3-46080aaa745a/full/200,/0/default.jpg"
   },
   {
    "id": "aic-43683",
    "name": "E1: English Great Room of the Late Tudor Period, 1550–1603",
    "sub": "Narcissa Niblack Thorne, c. 1937",
-   "thumb": "https://www.artic.edu/iiif/2/4f380a93-7ead-f1a9-48e1-74b922911f39/full/200,/0/default.jpg",
+   "thumb": "art/aic-43683.jpg",
    "full": "https://www.artic.edu/iiif/2/4f380a93-7ead-f1a9-48e1-74b922911f39/full/843,/0/default.jpg",
    "alt": "To-scale great room with a double-height ceiling. The bottom half of each wall is clad in elaborately carved wooden panels. The right wall features a tall bay window, the left a fireplace flanked by suits of armor. A long, rustic table with bench is centered in the room.",
    "meta": {
@@ -2221,13 +2295,14 @@ export default {
     "late",
     "period",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/4f380a93-7ead-f1a9-48e1-74b922911f39/full/200,/0/default.jpg"
   },
   {
    "id": "aic-45316",
    "name": "A1: Massachusetts Living Room and Kitchen, 1675–1700",
    "sub": "Narcissa Niblack Thorne, c. 1940",
-   "thumb": "https://www.artic.edu/iiif/2/d754818f-8c55-e8fb-f8f3-1ea286004df4/full/200,/0/default.jpg",
+   "thumb": "art/aic-45316.jpg",
    "full": "https://www.artic.edu/iiif/2/d754818f-8c55-e8fb-f8f3-1ea286004df4/full/843,/0/default.jpg",
    "alt": "Miniature of a cozy living room and kitchen in rich maple-colored wood tones, hardwood floors and wood paneling on the walls, a large brick fireplace and stove on the right. A cupboard on the back wall contains silver plates and mugs.",
    "meta": {
@@ -2250,13 +2325,14 @@ export default {
     "living",
     "kitchen",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d754818f-8c55-e8fb-f8f3-1ea286004df4/full/200,/0/default.jpg"
   },
   {
    "id": "aic-45401",
    "name": "A31: Tennessee Entrance Hall, 1835",
    "sub": "Narcissa Niblack Thorne, c. 1940",
-   "thumb": "https://www.artic.edu/iiif/2/832e689a-9b1f-6edf-da22-a1374b5fb6dc/full/200,/0/default.jpg",
+   "thumb": "art/aic-45401.jpg",
    "full": "https://www.artic.edu/iiif/2/832e689a-9b1f-6edf-da22-a1374b5fb6dc/full/843,/0/default.jpg",
    "alt": "Miniature room featuring walls decorated with a tropical landscape, a spiral staircase, a crystal chandelier, and two rugs.",
    "meta": {
@@ -2279,13 +2355,14 @@ export default {
     "entrance",
     "hall",
     "early_modern"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/832e689a-9b1f-6edf-da22-a1374b5fb6dc/full/200,/0/default.jpg"
   },
   {
    "id": "aic-93394",
    "name": "Battle Scene",
    "sub": "Hippolyte Bellangé, c. 1825",
-   "thumb": "https://www.artic.edu/iiif/2/a5274397-409c-1f76-866f-17d55cf31933/full/200,/0/default.jpg",
+   "thumb": "art/aic-93394.jpg",
    "full": "https://www.artic.edu/iiif/2/a5274397-409c-1f76-866f-17d55cf31933/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -2307,13 +2384,14 @@ export default {
     "battle",
     "scene",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/a5274397-409c-1f76-866f-17d55cf31933/full/200,/0/default.jpg"
   },
   {
    "id": "aic-30",
    "name": "The Battle around the Shield and Lance",
    "sub": "Giovanni Jacopo Caraglio, c. 1527",
-   "thumb": "https://www.artic.edu/iiif/2/d11c0a27-95f3-92fd-049b-37003e3cdf5a/full/200,/0/default.jpg",
+   "thumb": "art/aic-30.jpg",
    "full": "https://www.artic.edu/iiif/2/d11c0a27-95f3-92fd-049b-37003e3cdf5a/full/843,/0/default.jpg",
    "alt": "Etching of a dense group of plume-helmeted soldiers on foot and horseback engaged in battle.",
    "meta": {
@@ -2339,13 +2417,14 @@ export default {
     "shield",
     "lance",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d11c0a27-95f3-92fd-049b-37003e3cdf5a/full/200,/0/default.jpg"
   },
   {
    "id": "aic-147056",
    "name": "The Battle of Actium from The Story of Caesar and Cleopatra",
    "sub": "Workshop of Willem van Leefdael, c. 1680",
-   "thumb": "https://www.artic.edu/iiif/2/fd1e3838-4a1c-b45d-6fe5-6e43600cd427/full/200,/0/default.jpg",
+   "thumb": "art/aic-147056.jpg",
    "full": "https://www.artic.edu/iiif/2/fd1e3838-4a1c-b45d-6fe5-6e43600cd427/full/843,/0/default.jpg",
    "alt": "A work made of wool and silk, slit and double interlocking tapestry weave\nwarp: count: 9 warps per cm; wool: s-ply of three z-spun elements; diameters: 0.5–0.9 mm.\nweft: count: varies from 22 to 37 wefts per cm; wool: s ply of two z-spun elements; diameters: 0.4–0.8 mm; silk: pairs and three yarns of s-ply of two z-twisted elements; diameters: 0.6–0.9 mm; wool and silk: paired yarns of s-ply of two z-spun wool elements and s-ply of two z-twisted silk elements; diameters: 0.6–1.0 mm.",
    "meta": {
@@ -2371,13 +2450,14 @@ export default {
     "count",
     "warps",
     "three"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/fd1e3838-4a1c-b45d-6fe5-6e43600cd427/full/200,/0/default.jpg"
   },
   {
    "id": "aic-65167",
    "name": "The Crossing of the Granicus from The Story of Alexander the…",
    "sub": "Karel van Mander, II, 1619",
-   "thumb": "https://www.artic.edu/iiif/2/1b5f0ebd-8540-c9bd-b910-b1fb0580361f/full/200,/0/default.jpg",
+   "thumb": "art/aic-65167.jpg",
    "full": "https://www.artic.edu/iiif/2/1b5f0ebd-8540-c9bd-b910-b1fb0580361f/full/843,/0/default.jpg",
    "alt": "A work made of wool and silk, slit and double interlocking tapestry weave.",
    "meta": {
@@ -2403,13 +2483,14 @@ export default {
     "weaving",
     "textile",
     "crossing"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/1b5f0ebd-8540-c9bd-b910-b1fb0580361f/full/200,/0/default.jpg"
   },
   {
    "id": "aic-111618",
    "name": "The Battle of Zama",
    "sub": "After Cornelis Cort, After 1567",
-   "thumb": "https://www.artic.edu/iiif/2/6bde48ea-58f0-33eb-2d0b-a45aff7131e6/full/200,/0/default.jpg",
+   "thumb": "art/aic-111618.jpg",
    "full": "https://www.artic.edu/iiif/2/6bde48ea-58f0-33eb-2d0b-a45aff7131e6/full/843,/0/default.jpg",
    "alt": "A work made of oil on panel.",
    "meta": {
@@ -2433,13 +2514,14 @@ export default {
     "battle",
     "zama",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/6bde48ea-58f0-33eb-2d0b-a45aff7131e6/full/200,/0/default.jpg"
   },
   {
    "id": "aic-105466",
    "name": "The Battle between the Gods and the Giants",
    "sub": "Joachim Antonisz. Wtewael, c. 1608",
-   "thumb": "https://www.artic.edu/iiif/2/8111acce-c8ce-2ef3-5f32-61cd63905c7d/full/200,/0/default.jpg",
+   "thumb": "art/aic-105466.jpg",
    "full": "https://www.artic.edu/iiif/2/8111acce-c8ce-2ef3-5f32-61cd63905c7d/full/843,/0/default.jpg",
    "alt": "Animated scene of many mostly nude figures in close combat, on earth and aloft in low-hanging clouds, reaching toward one another with long spears.",
    "meta": {
@@ -2462,13 +2544,14 @@ export default {
     "gods",
     "giants",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/8111acce-c8ce-2ef3-5f32-61cd63905c7d/full/200,/0/default.jpg"
   },
   {
    "id": "aic-18664",
    "name": "Battle in the Mountains",
    "sub": "Rodolphe Bresdin, 1857",
-   "thumb": "https://www.artic.edu/iiif/2/5c8072dc-261a-8287-15a5-862231efb6c4/full/200,/0/default.jpg",
+   "thumb": "art/aic-18664.jpg",
    "full": "https://www.artic.edu/iiif/2/5c8072dc-261a-8287-15a5-862231efb6c4/full/843,/0/default.jpg",
    "alt": "A work made of pen and black ink, on tan wove tracing paper, laid down on cream wove paper.",
    "meta": {
@@ -2494,13 +2577,14 @@ export default {
     "visual",
     "works",
     "prints"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/5c8072dc-261a-8287-15a5-862231efb6c4/full/200,/0/default.jpg"
   },
   {
    "id": "aic-30354",
    "name": "Hercules and Antaeus",
    "sub": "Pietro Tacca, 1600–1625",
-   "thumb": "https://www.artic.edu/iiif/2/9de2aea3-ecd8-584f-9e71-417149fec73a/full/200,/0/default.jpg",
+   "thumb": "art/aic-30354.jpg",
    "full": "https://www.artic.edu/iiif/2/9de2aea3-ecd8-584f-9e71-417149fec73a/full/843,/0/default.jpg",
    "alt": "A work made of bronze.",
    "meta": {
@@ -2523,13 +2607,14 @@ export default {
     "hercules",
     "antaeus",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/9de2aea3-ecd8-584f-9e71-417149fec73a/full/200,/0/default.jpg"
   },
   {
    "id": "aic-30358",
    "name": "Hercules and Lichas",
    "sub": "Pietro Tacca, 1600–1625",
-   "thumb": "https://www.artic.edu/iiif/2/70ddcad4-9f2d-e91c-cb3a-af24f9224cec/full/200,/0/default.jpg",
+   "thumb": "art/aic-30358.jpg",
    "full": "https://www.artic.edu/iiif/2/70ddcad4-9f2d-e91c-cb3a-af24f9224cec/full/843,/0/default.jpg",
    "alt": "A work made of bronze.",
    "meta": {
@@ -2551,13 +2636,14 @@ export default {
     "hercules",
     "lichas",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/70ddcad4-9f2d-e91c-cb3a-af24f9224cec/full/200,/0/default.jpg"
   },
   {
    "id": "aic-27435",
    "name": "Battle of the Naked Men",
    "sub": "Antonio Pollaiuolo, 1489-95",
-   "thumb": "https://www.artic.edu/iiif/2/615f7048-eeae-e8a2-6e72-d1ce7569fdb4/full/200,/0/default.jpg",
+   "thumb": "art/aic-27435.jpg",
    "full": "https://www.artic.edu/iiif/2/615f7048-eeae-e8a2-6e72-d1ce7569fdb4/full/843,/0/default.jpg",
    "alt": "A work made of engraving in black on ivory laid paper.",
    "meta": {
@@ -2581,13 +2667,14 @@ export default {
     "battle",
     "naked",
     "medieval"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/615f7048-eeae-e8a2-6e72-d1ce7569fdb4/full/200,/0/default.jpg"
   },
   {
    "id": "aic-9378",
    "name": "Self-Portrait",
    "sub": "Cornelis Visscher, 1649",
-   "thumb": "https://www.artic.edu/iiif/2/a05a0751-ae77-2e3a-9421-0d5a666c47fe/full/200,/0/default.jpg",
+   "thumb": "art/aic-9378.jpg",
    "full": "https://www.artic.edu/iiif/2/a05a0751-ae77-2e3a-9421-0d5a666c47fe/full/843,/0/default.jpg",
    "alt": "Portrait in fine black ink of a light-skinned young man with a prominent nose, soft features, and wavy shoulder-length hair. He wears a brimmed hat, a cape, and large collar.",
    "meta": {
@@ -2612,13 +2699,14 @@ export default {
     "self",
     "portrait",
     "renaissance"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/a05a0751-ae77-2e3a-9421-0d5a666c47fe/full/200,/0/default.jpg"
   },
   {
    "id": "aic-13551",
    "name": "Self-Portrait",
    "sub": "Hilaire Germain Edgar Degas, 1857",
-   "thumb": "https://www.artic.edu/iiif/2/d5c86d65-97e1-478b-8ecf-cc668355d923/full/200,/0/default.jpg",
+   "thumb": "art/aic-13551.jpg",
    "full": "https://www.artic.edu/iiif/2/d5c86d65-97e1-478b-8ecf-cc668355d923/full/843,/0/default.jpg",
    "alt": "A work made of etching in black on ivory laid paper.",
    "meta": {
@@ -2643,13 +2731,14 @@ export default {
     "self",
     "portrait",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d5c86d65-97e1-478b-8ecf-cc668355d923/full/200,/0/default.jpg"
   },
   {
    "id": "aic-110661",
    "name": "Self-Portrait",
    "sub": "Frédéric Bazille, 1865–66",
-   "thumb": "https://www.artic.edu/iiif/2/eb2cd58f-db63-0236-cebd-7ca8e63eda54/full/200,/0/default.jpg",
+   "thumb": "art/aic-110661.jpg",
    "full": "https://www.artic.edu/iiif/2/eb2cd58f-db63-0236-cebd-7ca8e63eda54/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -2670,13 +2759,14 @@ export default {
     "self",
     "portrait",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/eb2cd58f-db63-0236-cebd-7ca8e63eda54/full/200,/0/default.jpg"
   },
   {
    "id": "aic-152747",
    "name": "York Harbor, Coast of Maine",
    "sub": "Martin Johnson Heade, 1877",
-   "thumb": "https://www.artic.edu/iiif/2/3192ae4d-ffca-fe91-af12-2ca681f43e13/full/200,/0/default.jpg",
+   "thumb": "art/aic-152747.jpg",
    "full": "https://www.artic.edu/iiif/2/3192ae4d-ffca-fe91-af12-2ca681f43e13/full/843,/0/default.jpg",
    "alt": "A work made of oil on canvas.",
    "meta": {
@@ -2698,13 +2788,14 @@ export default {
     "coast",
     "maine",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/3192ae4d-ffca-fe91-af12-2ca681f43e13/full/200,/0/default.jpg"
   },
   {
    "id": "aic-9863",
    "name": "Coin Depicting a Ship's Prow",
    "sub": "Ancient Greek, after 307-243 BCE",
-   "thumb": "https://www.artic.edu/iiif/2/d0d1b9af-15dd-e690-359f-653f01707af0/full/200,/0/default.jpg",
+   "thumb": "art/aic-9863.jpg",
    "full": "https://www.artic.edu/iiif/2/d0d1b9af-15dd-e690-359f-653f01707af0/full/843,/0/default.jpg",
    "alt": "A work made of bronze.",
    "meta": {
@@ -2727,13 +2818,14 @@ export default {
     "prow",
     "medieval",
     "sculpture"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/d0d1b9af-15dd-e690-359f-653f01707af0/full/200,/0/default.jpg"
   },
   {
    "id": "aic-253",
    "name": "Hydria (Water Jar)",
    "sub": "Ancient Greek, about 300 BCE",
-   "thumb": "https://www.artic.edu/iiif/2/9af8c354-e223-256b-6aa9-71738010d4d5/full/200,/0/default.jpg",
+   "thumb": "art/aic-253.jpg",
    "full": "https://www.artic.edu/iiif/2/9af8c354-e223-256b-6aa9-71738010d4d5/full/843,/0/default.jpg",
    "alt": "A work made of terracotta, black-glaze.",
    "meta": {
@@ -2756,13 +2848,14 @@ export default {
     "hydria",
     "water",
     "medieval"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/9af8c354-e223-256b-6aa9-71738010d4d5/full/200,/0/default.jpg"
   },
   {
    "id": "aic-7624",
    "name": "Komurasaki of the Miuraya and Shirai Gompachi (Miuraya Komur…",
    "sub": "Kitagawa Utamaro, c. 1800",
-   "thumb": "https://www.artic.edu/iiif/2/66c4dafb-2f53-f5ac-b676-32cafbe5b6bd/full/200,/0/default.jpg",
+   "thumb": "art/aic-7624.jpg",
    "full": "https://www.artic.edu/iiif/2/66c4dafb-2f53-f5ac-b676-32cafbe5b6bd/full/843,/0/default.jpg",
    "alt": "A work made of color woodblock print; hashira-e.",
    "meta": {
@@ -2788,13 +2881,14 @@ export default {
     "shirai",
     "gompachi",
     "nineteenth_century"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/66c4dafb-2f53-f5ac-b676-32cafbe5b6bd/full/200,/0/default.jpg"
   },
   {
    "id": "aic-4371",
    "name": "Hamamatsu, from the series \"Fifty-three Stations of the Toka…",
    "sub": "Utagawa Hiroshige, c. 1837/42",
-   "thumb": "https://www.artic.edu/iiif/2/cef4e5df-a749-090b-b897-7d5f40654685/full/200,/0/default.jpg",
+   "thumb": "art/aic-4371.jpg",
    "full": "https://www.artic.edu/iiif/2/cef4e5df-a749-090b-b897-7d5f40654685/full/843,/0/default.jpg",
    "alt": "Color print of travelers of foot and horseback following a grassy route flanked by Japanese bungalows and groves of trees.",
    "meta": {
@@ -2820,13 +2914,14 @@ export default {
     "series",
     "fifty",
     "three"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/cef4e5df-a749-090b-b897-7d5f40654685/full/200,/0/default.jpg"
   },
   {
    "id": "aic-4368",
    "name": "Mitsuke: Ferries Crossing the Tenryu River (Mitsuke, Tenryug…",
    "sub": "Utagawa Hiroshige, c. 1837/42",
-   "thumb": "https://www.artic.edu/iiif/2/2920ee93-7e74-393e-c270-d58847eb9af7/full/200,/0/default.jpg",
+   "thumb": "art/aic-4368.jpg",
    "full": "https://www.artic.edu/iiif/2/2920ee93-7e74-393e-c270-d58847eb9af7/full/843,/0/default.jpg",
    "alt": "Color print of a Japanese landscape with a person on horseback in the foreground, flanked by several trees and low green hills. Beyond this figure, others on ferries cross a winding river in rowboats toward tent-like structures in the distance. Vertical text in Japanese peppers the top half of the work, with text in a vertical red banner at upper right.",
    "meta": {
@@ -2852,7 +2947,8 @@ export default {
     "crossing",
     "tenryu",
     "river"
-   ]
+   ],
+   "remote": "https://www.artic.edu/iiif/2/2920ee93-7e74-393e-c270-d58847eb9af7/full/200,/0/default.jpg"
   }
  ]
 };
