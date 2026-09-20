@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.DS_Store
+.vite
+
+# Unregistered instruments kept on disk for reference, not part of the app.
+src/demos/_parked/
