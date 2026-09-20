@@ -8,3 +8,4 @@ dist
 
 # Unregistered instruments kept on disk for reference, not part of the app.
 src/demos/_parked/
+shared/corpora/_archive/

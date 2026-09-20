@@ -2,25 +2,25 @@ import './style.css';
 import { ask, debounce } from './lib/jev.js';
 import { CORPORA, activeCorpus, setCorpus } from './lib/pile.js';
 
-import material from './demos/material.js';
 import stroke from './demos/stroke.js';
 import tree from './demos/tree.js';
 import sediment from './demos/sediment.js';
-import magnet from './demos/magnet.js';
 
 // The rest are parked in src/demos/_parked — unregistered, not deleted.
-const DEMOS = [material, stroke, tree, sediment, magnet];
+// The three phrase-driven instruments are tabs in their own right. Sediment is
+// not: it is reached through the corpus tabs, since picking "Flags" means
+// "sediment, over flags".
+const DEMOS = [stroke, tree];
 
 const app = document.querySelector('#app');
 app.innerHTML = `
   <header>
     <h1>Jev playground</h1>
-    <p class="sub">Five interfaces built on typed judgment. The probability distribution is the output, not a detail of it.</p>
+    <p class="sub">Eight views built on typed judgment. The probability distribution is the output, not a detail of it.</p>
     <nav id="nav"></nav>
   </header>
   <main>
     <section class="control">
-      <div id="corpus" class="corpus" hidden></div>
       <div id="input-slot" class="search"></div>
       <div id="examples" class="examples"></div>
       <p id="warn" class="warn" hidden></p>
@@ -36,7 +36,6 @@ const nav = document.querySelector('#nav');
 const stage = document.querySelector('#stage');
 const inputSlot = document.querySelector('#input-slot');
 const examplesEl = document.querySelector('#examples');
-const corpusEl = document.querySelector('#corpus');
 const warnEl = document.querySelector('#warn');
 const statusEl = document.querySelector('#status');
 const readoutEl = document.querySelector('#readout');
@@ -104,7 +103,15 @@ function select(demo) {
   document.querySelector('#demo-tag').textContent = demo.tagline;
   readoutEl.replaceChildren();
   warnEl.hidden = true;
-  for (const b of nav.children) b.classList.toggle('on', b.dataset.id === demo.id);
+  // A corpus tab is current when Sediment is showing AND that corpus is active.
+  const corpusId = activeCorpus().id;
+  for (const b of nav.querySelectorAll('button')) {
+    const on = b.dataset.corpus
+      ? demo.id === CORPUS_DEMO.id && b.dataset.corpus === corpusId
+      : b.dataset.id === demo.id;
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-selected', String(on));
+  }
 
   inputSlot.replaceChildren();
   inputEl = document.createElement(demo.multiline ? 'textarea' : 'input');
@@ -128,8 +135,6 @@ function select(demo) {
     examplesEl.append(b);
   }
 
-  // Corpus picker, for the instruments that read one. Switching rebuilds the
-  // instrument, because the pile's DOM nodes are per-item.
   // A corpus can ship its own webfonts (typefaces). Load once, on demand —
   // 44 font families is not something to pull in for every other corpus.
   if (demo.usesCorpus) {
@@ -143,37 +148,49 @@ function select(demo) {
     }
   }
 
-  corpusEl.hidden = !demo.usesCorpus;
-  corpusEl.replaceChildren();
-  if (demo.usesCorpus) {
-    const active = activeCorpus();
-    for (const c of CORPORA) {
-      const b = document.createElement('button');
-      b.type = 'button';
-      b.className = `chip${c.id === active.id ? ' on' : ''}`;
-      // Only the first letter — CSS `capitalize` would also hit "of" and
-      // "Ireland" in "counties of Ireland".
-      b.textContent = `${c.name.charAt(0).toUpperCase()}${c.name.slice(1)} (${c.items.length})`;
-      b.addEventListener('click', () => { setCorpus(c.id); select(demo); });
-      corpusEl.append(b);
-    }
-  }
-
   instance = demo.mount(stage, { rerun: () => run(inputEl.value) });
   run(inputEl.value);
 }
 
-for (const d of DEMOS) {
+const CORPUS_DEMO = sediment;
+
+const tab = (label, wire) => {
   const b = document.createElement('button');
   b.type = 'button';
-  b.dataset.id = d.id;
-  b.textContent = d.short ?? d.title;
-  b.addEventListener('click', () => { location.hash = d.id; });
+  b.role = 'tab';
+  b.textContent = label;
+  wire(b);
   nav.append(b);
+  return b;
+};
+
+for (const d of DEMOS) {
+  tab(d.short ?? d.title, (b) => {
+    b.dataset.id = d.id;
+    b.addEventListener('click', () => { location.hash = d.id; });
+  });
+}
+// Corpus tabs: each one means "Sediment, over this corpus".
+for (const c of CORPORA) {
+  const label = `${c.name.charAt(0).toUpperCase()}${c.name.slice(1)} (${c.items.length})`;
+  tab(label, (btn) => {
+    btn.dataset.corpus = c.id;
+    btn.addEventListener('click', () => {
+      setCorpus(c.id);
+      if (location.hash.slice(1) === c.id) select(CORPUS_DEMO);
+      else location.hash = c.id;
+    });
+  });
 }
 
-const fromHash = () =>
-  DEMOS.find((d) => d.id === location.hash.slice(1)) ?? DEMOS[0];
+function fromHash() {
+  const id = location.hash.slice(1);
+  const demo = DEMOS.find((d) => d.id === id);
+  if (demo) return demo;
+  const corpus = CORPORA.find((c) => c.id === id);
+  if (corpus) { setCorpus(corpus.id); return CORPUS_DEMO; }
+  return DEMOS[0];
+}
 
 window.addEventListener('hashchange', () => select(fromHash()));
 select(fromHash());

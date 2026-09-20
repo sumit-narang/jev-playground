@@ -1,5 +1,4 @@
 import emoji from './emoji.js';
-import spanning from './spanning.js';
 import artworksData from './artworks.js';
 import restaurants from './restaurants.js';
 import counties from './counties.js';
@@ -26,8 +25,9 @@ const artworks = {
   items: artworksData.items,
 };
 
+// Archived corpora live in shared/corpora/_archive — unregistered, not deleted.
 export const CORPORA = [
-  restaurants, counties, flags, typefaces, artworks, spanning, emoji,
+  restaurants, counties, flags, typefaces, artworks, emoji,
 ];
 export const DEFAULT_CORPUS = 'restaurants';
 export const getCorpus = (id) => CORPORA.find((c) => c.id === id) ?? CORPORA[0];
