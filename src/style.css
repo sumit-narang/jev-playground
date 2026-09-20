@@ -75,7 +75,10 @@ main {
   flex: 1; display: grid; gap: 14px; padding: 14px 24px 28px;
   grid-template-columns: minmax(0, 1fr) 300px;
   grid-template-areas: "control control" "stage readout";
-  grid-template-rows: auto minmax(430px, 1fr);
+  /* `1fr` made the stage whatever was left over, so it changed size with the
+     controls above it — the corpus picker and wrapped example chips differ per
+     instrument. An explicit height keeps every stage identical. */
+  grid-template-rows: auto auto;
 }
 .control { grid-area: control; }
 .stage-wrap { grid-area: stage; min-width: 0; }
@@ -112,7 +115,7 @@ main {
 }
 
 .stage {
-  position: relative; height: 100%; min-height: 430px; overflow: hidden;
+  position: relative; height: clamp(430px, 64vh, 680px); overflow: hidden;
   background: var(--panel); backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--panel-line); box-shadow: var(--shadow);
@@ -176,13 +179,22 @@ main {
 }
 
 /* ── canvas instruments ─────────────────────────────────────────────────── */
-.entropy-canvas, .stroke-canvas, .hand-canvas, .face-canvas { display: block; width: 100%; height: 100%; }
-.stroke-canvas, .hand-canvas { height: calc(100% - 46px); background: #fff; }
-.stroke-canvas { cursor: crosshair; }
-.face-canvas { cursor: crosshair; }
+/* Every instrument's own surface is absolutely positioned inside the stage, so
+   it contributes NO layout height. An in-flow canvas with a pixel height pushes
+   the stage taller, which re-fires its ResizeObserver, which grows it again —
+   that feedback loop is why stroke crept downward on every scroll. The pile
+   instruments never had it because .pile-stage was already absolute. */
+.entropy-canvas, .stroke-canvas, .hand-canvas, .face-canvas, .tree-canvas {
+  position: absolute; inset: 0; display: block; width: 100%; height: 100%;
+}
+/* `height: auto` would resolve to the canvas's intrinsic (attribute) height
+   rather than filling the insets — canvas is a replaced element. */
+.stroke-canvas, .hand-canvas { inset: 0 0 46px 0; height: calc(100% - 46px); background: #fff; }
+.stroke-canvas, .face-canvas { cursor: crosshair; }
 
 .stroke-bar, .hand-bar {
-  height: 46px; display: flex; align-items: center; gap: 12px;
+  position: absolute; left: 0; right: 0; bottom: 0; height: 46px;
+  display: flex; align-items: center; gap: 12px;
   justify-content: space-between; padding: 0 14px;
   border-top: 1px solid var(--hairline);
 }
@@ -324,8 +336,3 @@ main {
 }
 
 /* tree */
-.tree-canvas { display: block; width: 100%; height: 100%; cursor: pointer; }
-.tree-hint {
-  position: absolute; left: 0; right: 0; bottom: 10px; text-align: center;
-  color: var(--muted); font-size: 11px; margin: 0; pointer-events: none;
-}

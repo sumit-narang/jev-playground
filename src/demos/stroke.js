@@ -35,14 +35,16 @@ export default {
     let drawing = false, lastPt = null, drift = 0, rand = rng('stroke');
 
     const resize = () => {
-      const r = root.getBoundingClientRect();
+      // Measure the canvas itself — CSS owns its box, so there is no feedback.
+      const r = canvas.getBoundingClientRect();
+      if (!r.width || !r.height) return;
       const img = ctx.getImageData(0, 0, canvas.width || 1, canvas.height || 1);
-      canvas.width = Math.max(1, r.width * devicePixelRatio);
-      canvas.height = Math.max(1, (r.height - 44) * devicePixelRatio);
+      canvas.width = Math.max(1, Math.round(r.width * devicePixelRatio));
+      canvas.height = Math.max(1, Math.round(r.height * devicePixelRatio));
       ctx.putImageData(img, 0, 0);
     };
     const ro = new ResizeObserver(resize);
-    ro.observe(root);
+    ro.observe(canvas);
     resize();
 
     const pos = (ev) => {

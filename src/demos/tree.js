@@ -12,7 +12,7 @@ const SEASONS = {
 
 export default {
   id: 'tree',
-  short: 'a tree',
+  short: 'Tree',
   title: 'Description → a tree',
   tagline: 'Eight axes grow the whole thing — every branch, split and leaf is computed.',
   placeholder: 'an ancient oak alone in a field',
@@ -41,33 +41,30 @@ export default {
     const canvas = document.createElement('canvas');
     canvas.className = 'tree-canvas';
     root.append(canvas);
-    const hint = document.createElement('p');
-    hint.className = 'tree-hint';
-    hint.textContent = 'click to regrow';
-    root.append(hint);
-
     const ctx = canvas.getContext('2d');
-    let p = null, seedStr = 'tree', variant = 0;
+    let p = null, seedStr = 'tree';
 
     const resize = () => {
-      const r = root.getBoundingClientRect();
-      canvas.width = Math.max(1, r.width * devicePixelRatio);
-      canvas.height = Math.max(1, r.height * devicePixelRatio);
+      const r = canvas.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      canvas.width = Math.max(1, Math.round(r.width * devicePixelRatio));
+      canvas.height = Math.max(1, Math.round(r.height * devicePixelRatio));
       if (p) draw();
     };
     const ro = new ResizeObserver(resize);
-    ro.observe(root);
+    ro.observe(canvas);
     resize();
-
-    root.addEventListener('pointerdown', () => { variant++; if (p) draw(); });
 
     function draw() {
       const { width: w, height: h } = canvas;
-      const U = Math.min(w / 460, h / 520);
-      const rand = rng(seedStr + variant);
+      // Fixed drawing scale: the tree stays the same size whatever the canvas
+      // does, anchored to a ground line a fixed distance from the bottom.
+      const U = devicePixelRatio;
+      const DRAW_H = 400 * U;
+      const rand = rng(seedStr);
       ctx.clearRect(0, 0, w, h);
 
-      const groundY = h * 0.88;
+      const groundY = h - 54 * U;
       const season = SEASONS[p.season] ?? SEASONS.deep_green;
       const leafColour = season.leaf;
 
@@ -84,7 +81,7 @@ export default {
       // A branch chain totals len/(1-shrink), so the trunk has to be derived
       // from the space available — pick it directly and the tree grows off the
       // top of the canvas at any generous height score.
-      const canopyH = groundY - h * 0.1;
+      const canopyH = DRAW_H;
       const trunkLen = canopyH * (1 - shrink) * lerp(0.82, 1.05, p.height);
       const trunkW = U * lerp(4, 22, p.trunk);
       const splitAngle = lerp(0.16, 0.62, p.spread);
@@ -174,8 +171,8 @@ export default {
       ctx.restore();
 
       ctx.beginPath();
-      ctx.moveTo(w * 0.08, groundY);
-      ctx.lineTo(w * 0.92, groundY);
+      ctx.moveTo(Math.max(w * 0.06, w / 2 - 340 * U), groundY);
+      ctx.lineTo(Math.min(w * 0.94, w / 2 + 340 * U), groundY);
       ctx.strokeStyle = 'rgba(15,23,42,0.18)';
       ctx.lineWidth = 1.2 * devicePixelRatio;
       ctx.stroke();
@@ -184,7 +181,6 @@ export default {
     return {
       update(answers, input) {
         seedStr = input;
-        variant = 0;
         p = {
           height: val(answers, 'height'), spread: val(answers, 'spread'),
           density: val(answers, 'density'), gnarl: val(answers, 'gnarl'),
@@ -201,7 +197,7 @@ export default {
           ['foliage', (SEASONS[p.season] ?? {}).note ?? p.season],
         ];
       },
-      destroy() { ro.disconnect(); canvas.remove(); hint.remove(); },
+      destroy() { ro.disconnect(); canvas.remove(); },
     };
   },
 };
